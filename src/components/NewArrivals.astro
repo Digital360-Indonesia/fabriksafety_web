@@ -1,0 +1,142 @@
+---
+// New Arrivals Section Component
+const products = [
+  {
+    id: 1,
+    name: 'Coverall Pro Series',
+    category: 'Coverall',
+    price: 'Rp 450.000',
+    image: 'https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=400&h=400&fit=crop',
+    badge: 'Best Seller',
+    badgeColor: 'bg-yellow-100 text-yellow-800'
+  },
+  {
+    id: 2,
+    name: 'Jaket Safety Reflective',
+    category: 'Jaket',
+    price: 'Rp 325.000',
+    image: 'https://images.unsplash.com/photo-1551028919-ac66e5e205e5?w=400&h=400&fit=crop',
+    badge: 'New',
+    badgeColor: 'bg-green-100 text-green-800'
+  },
+  {
+    id: 3,
+    name: 'Helm Premium V2',
+    category: 'Helm',
+    price: 'Rp 275.000',
+    image: 'https://images.unsplash.com/photo-1578874691223-64558a3ca096?w=400&h=400&fit=crop',
+    badge: null,
+    badgeColor: ''
+  },
+  {
+    id: 4,
+    name: 'Wearpack Industrial',
+    category: 'Wearpack',
+    price: 'Rp 385.000',
+    image: 'https://images.unsplash.com/photo-1578874691223-64558a3ca096?w=400&h=400&fit=crop',
+    badge: 'Popular',
+    badgeColor: 'bg-blue-100 text-blue-800'
+  },
+  {
+    id: 5,
+    name: 'Sepatu Safety Steel',
+    category: 'Sepatu',
+    price: 'Rp 525.000',
+    image: 'https://images.unsplash.com/photo-1608256246200-53e635b5b65f?w=400&h=400&fit=crop',
+    badge: 'Limited',
+    badgeColor: 'bg-purple-100 text-purple-800'
+  },
+  {
+    id: 6,
+    name: 'Sarung Tangan Cut-Resistant',
+    category: 'Sarung Tangan',
+    price: 'Rp 95.000',
+    image: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=400&h=400&fit=crop',
+    badge: 'New',
+    badgeColor: 'bg-green-100 text-green-800'
+  },
+  {
+    id: 7,
+    name: 'Kacamata Safety Anti-Fog',
+    category: 'Kacamata',
+    price: 'Rp 125.000',
+    image: 'https://images.unsplash.com/photo-1585435557343-3b092031a831?w=400&h=400&fit=crop',
+    badge: null,
+    badgeColor: ''
+  },
+  {
+    id: 8,
+    name: 'Masker Respirator Pro',
+    category: 'Masker',
+    price: 'Rp 185.000',
+    image: 'https://images.unsplash.com/photo-1584634731339-252c581abfc5?w=400&h=400&fit=crop',
+    badge: 'Hot',
+    badgeColor: 'bg-red-100 text-red-800'
+  }
+];
+---
+
+<section id="new-arrivals" class="py-16 md:py-24 bg-gray-50">
+  <div class="container-custom">
+    <div class="text-center space-y-4 mb-12">
+      <h2 class="section-title">Produk Terbaru</h2>
+      <p class="section-subtitle max-w-2xl mx-auto">
+        Koleksi perlengkapan safety terbaru dengan teknologi terkini untuk perlindungan maksimal
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      {products.map((product) => (
+        <div class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300">
+          <!-- Product Image -->
+          <div class="relative aspect-square bg-gray-100 overflow-hidden">
+            <img
+              src={product.image}
+              alt={product.name}
+              class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+            />
+            {product.badge && (
+              <span class={`absolute top-4 left-4 ${product.badgeColor} px-3 py-1 rounded-full text-xs font-semibold`}>
+                {product.badge}
+              </span>
+            )}
+            <!-- Quick Action Overlay -->
+            <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+              <button class="bg-white text-gray-900 px-6 py-3 rounded-lg font-semibold hover:bg-primary-600 hover:text-white transition-colors duration-300">
+                Lihat Detail
+              </button>
+            </div>
+          </div>
+
+          <!-- Product Info -->
+          <div class="p-5">
+            <p class="text-sm text-gray-500 mb-1">{product.category}</p>
+            <h3 class="font-semibold text-gray-900 mb-2 group-hover:text-primary-600 transition-colors">
+              {product.name}
+            </h3>
+            <div class="flex items-center justify-between">
+              <span class="text-lg font-bold text-primary-600">{product.price}</span>
+              <button
+                class="p-2 rounded-lg hover:bg-gray-100 transition-colors"
+                aria-label="Add to cart"
+              >
+                <svg class="w-5 h-5 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"/>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+
+    <div class="text-center mt-12">
+      <a href="#" class="btn-primary">
+        Lihat Semua Produk
+        <svg class="inline-block w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+        </svg>
+      </a>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,118 @@
+---
+// Hero Section Component
+---
+
+<section id="hero" class="relative bg-gradient-to-br from-gray-50 to-gray-100 overflow-hidden">
+  <!-- Background Pattern -->
+  <div class="absolute inset-0 opacity-10">
+    <svg class="w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="none">
+      <defs>
+        <pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse">
+          <path d="M 10 0 L 0 0 0 10" fill="none" stroke="currentColor" stroke-width="0.5"/>
+        </pattern>
+      </defs>
+      <rect width="100" height="100" fill="url(#grid)" />
+    </svg>
+  </div>
+
+  <div class="container-custom relative">
+    <div class="grid lg:grid-cols-2 gap-12 items-center min-h-[600px] lg:min-h-[700px] py-12 lg:py-20">
+      <!-- Left Content -->
+      <div class="space-y-8 z-10">
+        <div class="space-y-4">
+          <span class="inline-block bg-primary-100 text-primary-700 px-4 py-2 rounded-full text-sm font-semibold">
+            #1 Pakaian Safety di Indonesia
+          </span>
+          <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
+            Perlengkapan Safety Terbaik untuk Tim Profesional
+          </h1>
+          <p class="text-lg md:text-xl text-gray-600 max-w-xl">
+            Wearpack & coverall berkualitas tinggi, nyaman dipakai, dan tahan lama. Solusi lengkap untuk kebutuhan safety perusahaan Anda.
+          </p>
+        </div>
+
+        <div class="flex flex-col sm:flex-row gap-4">
+          <a href="#categories" class="btn-primary text-center">
+            Lihat Katalog
+            <svg class="inline-block w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+            </svg>
+          </a>
+          <a href="#contact" class="btn-secondary text-center">
+            Pesan Custom Order
+          </a>
+        </div>
+
+        <!-- Trust Badges -->
+        <div class="flex flex-wrap items-center gap-6 pt-4">
+          <div class="flex items-center space-x-2">
+            <svg class="w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+            </svg>
+            <span class="text-sm text-gray-600">100% Original</span>
+          </div>
+          <div class="flex items-center space-x-2">
+            <svg class="w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+            </svg>
+            <span class="text-sm text-gray-600">Quality Guaranteed</span>
+          </div>
+          <div class="flex items-center space-x-2">
+            <svg class="w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+            </svg>
+            <span class="text-sm text-gray-600">Fast Delivery</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Image -->
+      <div class="relative lg:ml-auto">
+        <div class="relative">
+          <!-- Main Image Container -->
+          <div class="relative rounded-2xl overflow-hidden shadow-2xl aspect-[4/5] bg-gradient-to-br from-primary-100 to-primary-200">
+            <!-- Placeholder for Hero Image -->
+            <img
+              src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&h=1000&fit=crop"
+              alt="Workers wearing safety equipment"
+              class="w-full h-full object-cover"
+              loading="eager"
+            />
+          </div>
+
+          <!-- Floating Stats Card -->
+          <div class="absolute -left-8 top-1/4 bg-white rounded-xl shadow-xl p-6 hidden lg:block">
+            <div class="flex items-center space-x-4">
+              <div class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center">
+                <svg class="w-6 h-6 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
+                </svg>
+              </div>
+              <div>
+                <p class="text-2xl font-bold text-gray-900">500+</p>
+                <p class="text-sm text-gray-600">Perusahaan</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Floating Product Card -->
+          <div class="absolute -right-4 bottom-1/4 bg-white rounded-xl shadow-xl p-4 hidden lg:block">
+            <div class="flex items-center space-x-3">
+              <div class="w-16 h-16 bg-gray-100 rounded-lg overflow-hidden">
+                <img
+                  src="https://images.unsplash.com/photo-1578874691223-64558a3ca096?w=100&h=100&fit=crop"
+                  alt="Safety wear"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+              <div>
+                <p class="font-semibold text-gray-900">Wearpack Pro</p>
+                <p class="text-sm text-primary-600 font-semibold">Best Seller</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
