@@ -73,8 +73,14 @@ const testimonials = [
   <div class="container-custom">
     <!-- Section Header -->
     <div class="text-center space-y-4 mb-12">
-      <h2 class="section-title">Dipercaya oleh 500+ Perusahaan</h2>
-      <p class="section-subtitle max-w-2xl mx-auto">
+      <h2 class="section-title"
+        data-id="Dipercaya oleh 500+ Perusahaan"
+        data-en="Trusted by 500+ Companies"
+      >Dipercaya oleh 500+ Perusahaan</h2>
+      <p class="section-subtitle max-w-2xl mx-auto"
+        data-id="Kami bangga menjadi mitra terpercaya dalam menyediakan perlengkapan safety untuk berbagai industri di Indonesia"
+        data-en="We are proud to be a trusted partner in providing safety equipment for various industries in Indonesia"
+      >
         Kami bangga menjadi mitra terpercaya dalam menyediakan perlengkapan safety untuk berbagai industri di Indonesia
       </p>
     </div>
@@ -162,25 +168,40 @@ const testimonials = [
     <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mb-16">
       <div class="bg-white rounded-xl p-6 text-center shadow-sm">
         <p class="text-3xl md:text-4xl font-bold text-primary-600 mb-2">500+</p>
-        <p class="text-gray-600">Perusahaan Klien</p>
+        <p class="text-gray-600"
+          data-id="Perusahaan Klien"
+          data-en="Client Companies"
+        >Perusahaan Klien</p>
       </div>
       <div class="bg-white rounded-xl p-6 text-center shadow-sm">
         <p class="text-3xl md:text-4xl font-bold text-primary-600 mb-2">100K+</p>
-        <p class="text-gray-600">Unit Terjual</p>
+        <p class="text-gray-600"
+          data-id="Unit Terjual"
+          data-en="Units Sold"
+        >Unit Terjual</p>
       </div>
       <div class="bg-white rounded-xl p-6 text-center shadow-sm">
         <p class="text-3xl md:text-4xl font-bold text-primary-600 mb-2">50+</p>
-        <p class="text-gray-600">Kota Pengiriman</p>
+        <p class="text-gray-600"
+          data-id="Kota Pengiriman"
+          data-en="Delivery Cities"
+        >Kota Pengiriman</p>
       </div>
       <div class="bg-white rounded-xl p-6 text-center shadow-sm">
         <p class="text-3xl md:text-4xl font-bold text-primary-600 mb-2">4.9</p>
-        <p class="text-gray-600">Rating Klien</p>
+        <p class="text-gray-600"
+          data-id="Rating Klien"
+          data-en="Client Rating"
+        >Rating Klien</p>
       </div>
     </div>
 
     <!-- Testimonials -->
     <div>
-      <h3 class="text-2xl font-bold text-center text-gray-900 mb-8">Apa Kata Klien Kami</h3>
+      <h3 class="text-2xl font-bold text-center text-gray-900 mb-8"
+        data-id="Apa Kata Klien Kami"
+        data-en="What Our Clients Say"
+      >Apa Kata Klien Kami</h3>
       <div class="relative overflow-hidden">
         <div id="testimonial-slider" class="flex gap-6">
           {testimonials.map((testimonial) => (
@@ -255,7 +276,7 @@ const testimonials = [
     <!-- CTA -->
     <div class="text-center mt-12">
       <a href="https://wa.me/62851111204599" class="btn-primary">
-        Bergabung Menjadi Klien Kami
+        <span data-id="Bergabung Menjadi Klien Kami" data-en="Join Our Clients">Bergabung Menjadi Klien Kami</span>
       </a>
     </div>
   </div>

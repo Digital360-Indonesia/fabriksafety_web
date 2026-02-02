@@ -1,10 +1,10 @@
 ---
 const navItems = [
-  { name: 'Beranda', href: '#hero' },
-  { name: 'Kategori', href: '#categories' },
-  { name: 'Klien Kami', href: '#portfolio' },
-  { name: 'Tentang Kami', href: '#about' },
-  { name: 'Kontak', href: '#contact' },
+  { name: 'Beranda', nameEn: 'Home', href: '#hero' },
+  { name: 'Kategori', nameEn: 'Categories', href: '#categories' },
+  { name: 'Klien Kami', nameEn: 'Our Clients', href: '#portfolio' },
+  { name: 'Tentang Kami', nameEn: 'About Us', href: '#about' },
+  { name: 'Kontak', nameEn: 'Contact', href: '#contact' },
 ];
 ---
 
@@ -25,6 +25,8 @@ const navItems = [
           <a
             href={item.href}
             class="text-gray-700 hover:text-primary-600 font-medium transition-colors duration-200"
+            data-id={item.name}
+            data-en={item.nameEn}
           >
             {item.name}
           </a>
@@ -36,6 +38,8 @@ const navItems = [
         <a
           href="https://wa.me/62851111204599"
           class="btn-primary text-sm"
+          data-id="Hubungi Kami"
+          data-en="Contact Us"
         >
           Hubungi Kami
         </a>
@@ -63,6 +67,8 @@ const navItems = [
           <a
             href={item.href}
             class="text-gray-700 hover:text-primary-600 font-medium py-2 px-4 rounded-lg hover:bg-gray-50 transition-colors"
+            data-id={item.name}
+            data-en={item.nameEn}
           >
             {item.name}
           </a>
@@ -70,6 +76,8 @@ const navItems = [
         <a
           href="https://wa.me/62851111204599"
           class="btn-primary text-center text-sm mt-2"
+          data-id="Hubungi Kami"
+          data-en="Contact Us"
         >
           Hubungi Kami
         </a>

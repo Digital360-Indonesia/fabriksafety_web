@@ -1,0 +1,112 @@
+---
+// Language Switcher Component
+---
+
+<div class="language-switcher fixed bottom-6 right-6 z-50">
+  <div class="flex items-center gap-2 bg-white rounded-full shadow-lg p-1 border border-gray-200">
+    <button
+      id="lang-id"
+      class="lang-btn flex items-center gap-2 px-3 py-2 rounded-full transition-all duration-300"
+    >
+      <span class="text-2xl">🇮🇩</span>
+      <span class="text-sm font-semibold">ID</span>
+    </button>
+    <button
+      id="lang-en"
+      class="lang-btn flex items-center gap-2 px-3 py-2 rounded-full transition-all duration-300"
+    >
+      <span class="text-2xl">🇬🇧</span>
+      <span class="text-sm font-semibold">EN</span>
+    </button>
+  </div>
+</div>
+
+<style>
+  .lang-btn.active {
+    background: linear-gradient(135deg, #0ea5e9, #0284c7);
+    color: white;
+  }
+
+  .lang-btn:not(.active) {
+    color: #64748b;
+  }
+
+  .lang-btn:not(.active):hover {
+    background: #f1f5f9;
+  }
+</style>
+
+<script>
+  function switchLanguage(lang) {
+    // Update URL without reload
+    const url = new URL(window.location);
+    if (lang === 'en') {
+      url.pathname = '/en' + url.pathname.replace(/^\/en/, '');
+    } else {
+      url.pathname = url.pathname.replace(/^\/en/, '') || '/';
+    }
+    window.history.pushState({}, '', url);
+
+    // Update active button
+    document.querySelectorAll('.lang-btn').forEach(btn => {
+      btn.classList.remove('active');
+    });
+    document.getElementById(`lang-${lang}`).classList.add('active');
+
+    // Update all text content
+    document.querySelectorAll('[data-id][data-en]').forEach(el => {
+      el.textContent = el.getAttribute(`data-${lang}`);
+    });
+
+    // Save preference to localStorage
+    localStorage.setItem('preferred-lang', lang);
+
+    // Dispatch event for other components
+    window.dispatchEvent(new CustomEvent('languageChange', { detail: { lang } }));
+  }
+
+  // Initialize language on page load
+  function initLanguage() {
+    // Check URL first
+    const urlLang = window.location.pathname.startsWith('/en') ? 'en' : 'id';
+
+    // Then check localStorage
+    const savedLang = localStorage.getItem('preferred-lang');
+    const lang = urlLang || savedLang || 'id';
+
+    // Set active button
+    document.querySelectorAll('.lang-btn').forEach(btn => {
+      btn.classList.remove('active');
+    });
+    document.getElementById(`lang-${lang}`).classList.add('active');
+
+    // Set initial text content
+    document.querySelectorAll('[data-id][data-en]').forEach(el => {
+      el.textContent = el.getAttribute(`data-${lang}`);
+    });
+
+    // Add click handlers
+    document.getElementById('lang-id').addEventListener('click', () => switchLanguage('id'));
+    document.getElementById('lang-en').addEventListener('click', () => switchLanguage('en'));
+  }
+
+  // Run on load
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initLanguage);
+  } else {
+    initLanguage();
+  }
+
+  // Listen for browser back/forward
+  window.addEventListener('popstate', () => {
+    const lang = window.location.pathname.startsWith('/en') ? 'en' : 'id';
+    document.querySelectorAll('.lang-btn').forEach(btn => {
+      btn.classList.remove('active');
+    });
+    document.getElementById(`lang-${lang}`).classList.add('active');
+
+    document.querySelectorAll('[data-id][data-en]').forEach(el => {
+      el.textContent = el.getAttribute(`data-${lang}`);
+    });
+  });
+</script>
