@@ -4,13 +4,13 @@
 
 @layer base {
   * {
-    @apply border-border;
+    box-sizing: border-box;
   }
   html {
     scroll-behavior: smooth;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-white text-gray-900;
   }
 }
 
