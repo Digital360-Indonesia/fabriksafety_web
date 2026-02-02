@@ -1,5 +1,19 @@
 ---
 // Hero Section Component
+const images = [
+  {
+    url: "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&h=1000&fit=crop",
+    alt: "Workers wearing safety equipment"
+  },
+  {
+    url: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&h=1000&fit=crop",
+    alt: "Construction workers in safety gear"
+  },
+  {
+    url: "https://images.unsplash.com/photo-1531973819741-e27a5ae2cc7a?w=800&h=1000&fit=crop",
+    alt: "Industrial safety equipment"
+  }
+];
 ---
 
 <section id="hero" class="relative bg-gradient-to-br from-gray-50 to-gray-100 overflow-hidden">
@@ -16,14 +30,14 @@
   </div>
 
   <div class="container-custom relative">
-    <div class="grid lg:grid-cols-2 gap-12 items-center min-h-[600px] lg:min-h-[700px] py-12 lg:py-20">
+    <div class="hero-grid">
       <!-- Left Content -->
       <div class="space-y-8 z-10">
         <div class="space-y-4">
           <span class="inline-block bg-primary-100 text-primary-700 px-4 py-2 rounded-full text-sm font-semibold">
             #1 Pakaian Safety di Indonesia
           </span>
-          <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
+          <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900" style="line-height: 1.2em;">
             Perlengkapan Safety Terbaik untuk Tim Profesional
           </h1>
           <p class="text-lg md:text-xl text-gray-600 max-w-xl">
@@ -38,7 +52,7 @@
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
             </svg>
           </a>
-          <a href="#contact" class="btn-secondary text-center">
+          <a href="https://wa.me/62851111204599" class="btn-secondary text-center">
             Pesan Custom Order
           </a>
         </div>
@@ -66,49 +80,57 @@
         </div>
       </div>
 
-      <!-- Right Image -->
-      <div class="relative lg:ml-auto">
-        <div class="relative">
-          <!-- Main Image Container -->
-          <div class="relative rounded-2xl overflow-hidden shadow-2xl aspect-[4/5] bg-gradient-to-br from-primary-100 to-primary-200">
-            <!-- Placeholder for Hero Image -->
-            <img
-              src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&h=1000&fit=crop"
-              alt="Workers wearing safety equipment"
-              class="w-full h-full object-cover"
-              loading="eager"
-            />
-          </div>
+      <!-- Right Image Slider -->
+      <div class="relative lg:ml-auto" style="width: 100%; max-width: 500px;">
+        <div id="hero-slider" style="width: 100%; height: 625px; position: relative; border-radius: 1rem; overflow: hidden; box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25); background: linear-gradient(to bottom right, rgb(225 232 255), rgb(199 210 254));">
+            {images.map((image, index) => (
+              <img
+                src={image.url}
+                alt={image.alt}
+                class="absolute inset-0 w-full h-full object-cover transition-opacity duration-1000"
+                style={`opacity: ${index === 0 ? '1' : '0'}; z-index: ${index === 0 ? '10' : '0'};`}
+                data-slide={index}
+                loading="eager"
+              />
+            ))}
 
-          <!-- Floating Stats Card -->
-          <div class="absolute -left-8 top-1/4 bg-white rounded-xl shadow-xl p-6 hidden lg:block">
-            <div class="flex items-center space-x-4">
-              <div class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center">
-                <svg class="w-6 h-6 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
-                </svg>
-              </div>
-              <div>
-                <p class="text-2xl font-bold text-gray-900">500+</p>
-                <p class="text-sm text-gray-600">Perusahaan</p>
-              </div>
+            <!-- Slider Navigation Dots -->
+            <div style="position: absolute; bottom: 1rem; left: 50%; transform: translateX(-50%); display: flex; gap: 0.5rem; z-index: 20;">
+              {images.map((_, index) => (
+                <button
+                  style={`width: 0.75rem; height: 0.75rem; border-radius: 9999px; transition: all 0.3s; ${index === 0 ? 'background-color: white; transform: scale(1.25);' : 'background-color: rgba(255,255,255,0.5);'} cursor: pointer;`}
+                  data-dot={index}
+                  aria-label={`Go to slide ${index + 1}`}
+                />
+              ))}
+            </div>
+        </div>
+
+        <!-- Floating Cards -->
+        <div style="position: absolute; top: 2rem; left: -1rem; z-index: 30;" class="hidden lg:block">
+          <div style="background: white; padding: 1rem 1.5rem; border-radius: 0.75rem; box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1); display: flex; align-items: center; gap: 0.75rem;">
+            <div style="background: linear-gradient(135deg, #0ea5e9, #0284c7); width: 3rem; height: 3rem; border-radius: 0.75rem; display: flex; align-items: center; justify-content: center;">
+              <svg style="width: 1.5rem; height: 1.5rem; color: white;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+              </svg>
+            </div>
+            <div>
+              <div style="font-size: 1.5rem; font-weight: 700; color: #0f172d; line-height: 1;">500+</div>
+              <div style="font-size: 0.875rem; color: #64748b;">Perusahaan</div>
             </div>
           </div>
+        </div>
 
-          <!-- Floating Product Card -->
-          <div class="absolute -right-4 bottom-1/4 bg-white rounded-xl shadow-xl p-4 hidden lg:block">
-            <div class="flex items-center space-x-3">
-              <div class="w-16 h-16 bg-gray-100 rounded-lg overflow-hidden">
-                <img
-                  src="https://images.unsplash.com/photo-1578874691223-64558a3ca096?w=100&h=100&fit=crop"
-                  alt="Safety wear"
-                  class="w-full h-full object-cover"
-                />
-              </div>
-              <div>
-                <p class="font-semibold text-gray-900">Wearpack Pro</p>
-                <p class="text-sm text-primary-600 font-semibold">Best Seller</p>
-              </div>
+        <div style="position: absolute; bottom: 2rem; right: -1rem; z-index: 30;" class="hidden lg:block">
+          <div style="background: white; padding: 1rem 1.5rem; border-radius: 0.75rem; box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1); display: flex; align-items: center; gap: 0.75rem;">
+            <div style="background: linear-gradient(135deg, #f59e0b, #d97706); width: 3rem; height: 3rem; border-radius: 0.75rem; display: flex; align-items: center; justify-content: center;">
+              <svg style="width: 1.5rem; height: 1.5rem; color: white;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/>
+              </svg>
+            </div>
+            <div>
+              <div style="font-size: 1.25rem; font-weight: 700; color: #0f172d; line-height: 1;">Wearpack Pro</div>
+              <div style="font-size: 0.875rem; color: #64748b;">Kualitas Premium</div>
             </div>
           </div>
         </div>
@@ -116,3 +138,102 @@
     </div>
   </div>
 </section>
+
+<style>
+  .hero-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    align-items: center;
+    min-height: 700px;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  @media (min-width: 1024px) {
+    .hero-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+</style>
+
+<script>
+  // Hero Image Slider
+  const slides = document.querySelectorAll('[data-slide]') as NodeListOf<HTMLImageElement>;
+  const dots = document.querySelectorAll('[data-dot]');
+  const sliderContainer = document.getElementById('hero-slider');
+  const heroGrid = document.querySelector('.hero-grid');
+  const rightColumn = sliderContainer?.parentElement;
+  const heading = document.querySelector('h1');
+
+  let currentSlide = 0;
+  const slideInterval = 5000;
+
+  // Wait for images to load before starting slider
+  function initSlider() {
+    console.log('=== Hero Slider Debug ===');
+    console.log('Initializing slider...');
+
+    // Debug heading line-height
+    if (heading) {
+      const headingStyles = getComputedStyle(heading);
+      console.log('Heading styles:', {
+        fontSize: headingStyles.fontSize,
+        lineHeight: headingStyles.lineHeight,
+        lineHeightNumeric: parseFloat(headingStyles.lineHeight),
+        classList: heading.className,
+        inlineStyle: heading.getAttribute('style')
+      });
+    }
+
+    function showSlide(index: number) {
+      slides.forEach((slide, i) => {
+        if (i === index) {
+          slide.style.opacity = '1';
+          slide.style.zIndex = '10';
+        } else {
+          slide.style.opacity = '0';
+          slide.style.zIndex = '0';
+        }
+      });
+
+      dots.forEach((dot: any, i) => {
+        if (i === index) {
+          dot.style.backgroundColor = 'white';
+          dot.style.transform = 'scale(1.25)';
+        } else {
+          dot.style.backgroundColor = 'rgba(255,255,255,0.5)';
+          dot.style.transform = 'scale(1)';
+        }
+      });
+    }
+
+    function nextSlide() {
+      currentSlide = (currentSlide + 1) % slides.length;
+      showSlide(currentSlide);
+    }
+
+    // Don't call showSlide(0) here - let the initial server-rendered state stay
+    // Just start the auto-advance
+    const interval = setInterval(nextSlide, slideInterval);
+
+    // Click handlers
+    dots.forEach((dot: any, index) => {
+      dot.addEventListener('click', () => {
+        currentSlide = index;
+        showSlide(currentSlide);
+        clearInterval(interval);
+        setInterval(nextSlide, slideInterval);
+      });
+    });
+
+    console.log('Slider initialized!');
+  }
+
+  // Wait for DOM to be ready
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initSlider);
+  } else {
+    initSlider();
+  }
+</script>

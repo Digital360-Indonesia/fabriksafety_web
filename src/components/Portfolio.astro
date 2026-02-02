@@ -1,13 +1,6 @@
 ---
 // Portfolio/Corporate Clients Section Component
-const clients = [
-  { name: 'Pertamina', logo: 'P' },
-  { name: 'PLN', logo: 'PL' },
-  { name: 'Waskita', logo: 'W' },
-  { name: 'Adhi Karya', logo: 'AK' },
-  { name: 'Jasa Marga', logo: 'JM' },
-  { name: 'Angkasa Pura', logo: 'AP' },
-];
+const clientLogo = 'https://vidogarment.com/wp-content/uploads/2025/07/20250718_vido-red_web_hires.png';
 
 const testimonials = [
   {
@@ -30,6 +23,48 @@ const testimonials = [
     position: 'Operations Manager',
     company: 'PT Mining Solutions',
     avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop'
+  },
+  {
+    text: 'Sudah 3 tahun kami bekerjasama dengan Fabrik Safety. Kualitas konsisten dan pelayanan sangat profesional.',
+    author: 'Dewi Lestari',
+    position: 'HR Manager',
+    company: 'PT Manufaktur Jaya',
+    avatar: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop'
+  },
+  {
+    text: 'Wearpack yang kami pesan sesuai dengan spesifikasi. Bahang drill america nya berkualitas tinggi.',
+    author: 'Hendra Wijaya',
+    position: 'Project Manager',
+    company: 'PT Infrastruktur Utama',
+    avatar: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&h=100&fit=crop'
+  },
+  {
+    text: 'Respon cepat dan solutif. Ketika kami butuh seragam mendadak, Fabrik Safety langsung siap membantu.',
+    author: 'Siti Aminah',
+    position: 'Procurement Manager',
+    company: 'PT Petrokimia Raya',
+    avatar: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=100&h=100&fit=crop'
+  },
+  {
+    text: 'Bordir logo perusahaan kami rapi dan presisi. Hasilnya melebihi ekspektasi kami.',
+    author: 'Rudi Hermawan',
+    position: 'GM Operation',
+    company: 'PT Logistic Indonesia',
+    avatar: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=100&h=100&fit=crop'
+  },
+  {
+    text: 'Repeat order ke-5 kalinya dan kualitas tetap konsisten. Mitra terpercaya untuk kebutuhan safety.',
+    author: 'Maya Sari',
+    position: 'Purchasing',
+    company: 'PT Otomotif Nasional',
+    avatar: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100&h=100&fit=crop'
+  },
+  {
+    text: 'Pelayanan ramah dan profesional. Tim Fabrik Safety sangat membantu dalam pemilihan produk yang tepat.',
+    author: 'Fajar Nugraha',
+    position: 'Safety Officer',
+    company: 'PT Engineering Pro',
+    avatar: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop'
   }
 ];
 ---
@@ -37,28 +72,91 @@ const testimonials = [
 <section id="portfolio" class="py-16 md:py-24 bg-gray-50">
   <div class="container-custom">
     <!-- Section Header -->
-    <div class="text-center space-y-4 mb-16">
+    <div class="text-center space-y-4 mb-12">
       <h2 class="section-title">Dipercaya oleh 500+ Perusahaan</h2>
       <p class="section-subtitle max-w-2xl mx-auto">
         Kami bangga menjadi mitra terpercaya dalam menyediakan perlengkapan safety untuk berbagai industri di Indonesia
       </p>
     </div>
 
-    <!-- Client Logos -->
-    <div class="mb-16">
-      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
-        {clients.map((client) => (
-          <div class="bg-white rounded-xl p-6 flex items-center justify-center shadow-sm hover:shadow-md transition-all duration-300 aspect-square">
-            <div class="text-center">
-              <div class="w-16 h-16 bg-gray-100 rounded-full flex items-center justify-center mx-auto mb-3">
-                <span class="text-xl font-bold text-gray-600">{client.logo}</span>
-              </div>
-              <p class="text-sm font-medium text-gray-600">{client.name}</p>
+    <!-- Client Logos Slider (3 rows, 20 logos each) -->
+    <div class="mb-16 space-y-6">
+      <!-- Row 1 -->
+      <div class="relative overflow-hidden">
+        <div id="logo-slider-1" class="flex gap-10 items-center">
+          {Array.from({ length: 20 }).map((_, i) => (
+            <div class="flex-shrink-0">
+              <img src={clientLogo} alt={`Client ${i + 1}`} class="w-36 h-16 object-contain opacity-70 hover:opacity-100 transition-opacity" />
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
+      </div>
+
+      <!-- Row 2 -->
+      <div class="relative overflow-hidden">
+        <div id="logo-slider-2" class="flex gap-10 items-center">
+          {Array.from({ length: 20 }).map((_, i) => (
+            <div class="flex-shrink-0">
+              <img src={clientLogo} alt={`Client ${i + 21}`} class="w-36 h-16 object-contain opacity-70 hover:opacity-100 transition-opacity" />
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <!-- Row 3 -->
+      <div class="relative overflow-hidden">
+        <div id="logo-slider-3" class="flex gap-10 items-center">
+          {Array.from({ length: 20 }).map((_, i) => (
+            <div class="flex-shrink-0">
+              <img src={clientLogo} alt={`Client ${i + 41}`} class="w-36 h-16 object-contain opacity-70 hover:opacity-100 transition-opacity" />
+            </div>
+          ))}
+        </div>
       </div>
     </div>
+
+    <style>
+      @keyframes slideLeft {
+        0% { transform: translateX(0); }
+        100% { transform: translateX(-50%); }
+      }
+
+      #logo-slider-1,
+      #logo-slider-3 {
+        animation: slideLeft 30s linear infinite;
+      }
+
+      #logo-slider-2 {
+        animation: slideLeft 30s linear infinite reverse;
+      }
+    </style>
+
+    <script>
+      function initLogoSliders() {
+        const sliders = [
+          document.getElementById('logo-slider-1'),
+          document.getElementById('logo-slider-2'),
+          document.getElementById('logo-slider-3')
+        ];
+
+        sliders.forEach(slider => {
+          if (slider) {
+            slider.addEventListener('mouseenter', () => {
+              slider.style.animationPlayState = 'paused';
+            });
+            slider.addEventListener('mouseleave', () => {
+              slider.style.animationPlayState = 'running';
+            });
+          }
+        });
+      }
+
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initLogoSliders);
+      } else {
+        initLogoSliders();
+      }
+    </script>
 
     <!-- Stats -->
     <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mb-16">
@@ -67,7 +165,7 @@ const testimonials = [
         <p class="text-gray-600">Perusahaan Klien</p>
       </div>
       <div class="bg-white rounded-xl p-6 text-center shadow-sm">
-        <p class="text-3xl md:text-4xl font-bold text-primary-600 mb-2">10K+</p>
+        <p class="text-3xl md:text-4xl font-bold text-primary-600 mb-2">100K+</p>
         <p class="text-gray-600">Unit Terjual</p>
       </div>
       <div class="bg-white rounded-xl p-6 text-center shadow-sm">
@@ -83,42 +181,80 @@ const testimonials = [
     <!-- Testimonials -->
     <div>
       <h3 class="text-2xl font-bold text-center text-gray-900 mb-8">Apa Kata Klien Kami</h3>
-      <div class="grid md:grid-cols-3 gap-6">
-        {testimonials.map((testimonial) => (
-          <div class="bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all duration-300">
-            <!-- Stars -->
-            <div class="flex items-center space-x-1 mb-4">
-              {[...Array(5)].map(() => (
-                <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
-                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
-                </svg>
-              ))}
-            </div>
+      <div class="relative overflow-hidden">
+        <div id="testimonial-slider" class="flex gap-6">
+          {testimonials.map((testimonial) => (
+            <div class="flex-shrink-0 w-80">
+              <div class="bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all duration-300 h-full">
+                <!-- Stars -->
+                <div class="flex items-center space-x-1 mb-4">
+                  {[...Array(5)].map(() => (
+                    <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                    </svg>
+                  ))}
+                </div>
 
-            <!-- Testimonial Text -->
-            <p class="text-gray-600 mb-6">"{testimonial.text}"</p>
+                <!-- Testimonial Text -->
+                <p class="text-gray-600 mb-4 text-sm">"{testimonial.text}"</p>
 
-            <!-- Author -->
-            <div class="flex items-center space-x-3">
-              <img
-                src={testimonial.avatar}
-                alt={testimonial.author}
-                class="w-12 h-12 rounded-full object-cover"
-              />
-              <div>
-                <p class="font-semibold text-gray-900">{testimonial.author}</p>
-                <p class="text-sm text-gray-500">{testimonial.position}</p>
-                <p class="text-xs text-gray-400">{testimonial.company}</p>
+                <!-- Author -->
+                <div class="flex items-center gap-3">
+                  <img
+                    src={clientLogo}
+                    alt={testimonial.company}
+                    class="w-10 h-10 object-contain"
+                  />
+                  <div>
+                    <p class="font-semibold text-gray-900 text-sm">{testimonial.author}</p>
+                    <p class="text-xs text-gray-400">{testimonial.company}</p>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </div>
 
+    <style>
+      @keyframes slideTestimonials {
+        0% { transform: translateX(0); }
+        100% { transform: translateX(-50%); }
+      }
+
+      #testimonial-slider {
+        animation: slideTestimonials 30s linear infinite;
+      }
+
+      #testimonial-slider:hover {
+        animation-play-state: paused;
+      }
+    </style>
+
+    <script>
+      function initTestimonialSlider() {
+        const slider = document.getElementById('testimonial-slider');
+        if (slider) {
+          slider.addEventListener('mouseenter', () => {
+            slider.style.animationPlayState = 'paused';
+          });
+          slider.addEventListener('mouseleave', () => {
+            slider.style.animationPlayState = 'running';
+          });
+        }
+      }
+
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initTestimonialSlider);
+      } else {
+        initTestimonialSlider();
+      }
+    </script>
+
     <!-- CTA -->
     <div class="text-center mt-12">
-      <a href="#contact" class="btn-primary">
+      <a href="https://wa.me/62851111204599" class="btn-primary">
         Bergabung Menjadi Klien Kami
       </a>
     </div>

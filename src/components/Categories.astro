@@ -2,39 +2,45 @@
 // Product Categories Section Component
 const categories = [
   {
-    name: 'Wearpack & Coverall',
+    name: 'Wearpack Pro',
+    description: 'Pakaian safety professional',
     icon: 'M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z',
-    image: 'https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=400&h=400&fit=crop',
+    image: '/images/categories/wearpack.webp',
     productCount: 45
   },
   {
-    name: 'Jaket Safety',
+    name: 'Safety Pants',
+    description: 'Celana kerja safety',
     icon: 'M13 10V3L4 14h7v7l9-11h-7z',
-    image: 'https://images.unsplash.com/photo-1551028919-ac66e5e205e5?w=400&h=400&fit=crop',
+    image: '/images/categories/celana.webp',
     productCount: 32
   },
   {
-    name: 'Helm & Pelindung Kepala',
+    name: 'Safety Polo',
+    description: 'Kaos kerja professional',
     icon: 'M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z',
-    image: 'https://images.unsplash.com/photo-1578874691223-64558a3ca096?w=400&h=400&fit=crop',
+    image: '/images/categories/poloshirt.webp',
     productCount: 28
   },
   {
-    name: 'Sepatu Safety',
+    name: 'Safety Vest',
+    description: 'Rompi reflektif',
     icon: 'M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z',
-    image: 'https://images.unsplash.com/photo-1608256246200-53e635b5b65f?w=400&h=400&fit=crop',
+    image: '/images/categories/rompi.webp',
     productCount: 56
   },
   {
-    name: 'Sarung Tangan',
+    name: 'Safety Jacket',
+    description: 'Jaket pelindung',
     icon: 'M7 11.5V14m0-2.5v-6a1.5 1.5 0 113 0m-3 6a1.5 1.5 0 00-3 0v2a7.5 7.5 0 0015 0v-5a1.5 1.5 0 00-3 0m-6-3V11m0-5.5v-1a1.5 1.5 0 013 0v1m0 0V11m0-5.5a1.5 1.5 0 013 0v3m0 0V11',
-    image: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=400&h=400&fit=crop',
+    image: '/images/categories/jaket.webp',
     productCount: 41
   },
   {
-    name: 'Kacamata & Masker',
+    name: 'Coverall Industrial',
+    description: 'Coverall heavy duty',
     icon: 'M15 12a3 3 0 11-6 0 3 3 0 016 0z M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z',
-    image: 'https://images.unsplash.com/photo-1585435557343-3b092031a831?w=400&h=400&fit=crop',
+    image: '/images/categories/coverall.webp',
     productCount: 38
   }
 ];
@@ -43,41 +49,41 @@ const categories = [
 <section id="categories" class="py-16 md:py-24 bg-white">
   <div class="container-custom">
     <div class="text-center space-y-4 mb-12">
-      <h2 class="section-title">Kategori Produk</h2>
+      <h2 class="section-title">CHOOSE YOUR WORKWEAR</h2>
       <p class="section-subtitle max-w-2xl mx-auto">
-        Temukan berbagai perlengkapan safety berkualitas tinggi untuk melindungi tim Anda di setiap situasi kerja
+        Pakaian kerja safety berkualitas untuk mendukung produktivitas dan keamanan di lapangan maupun industri.
       </p>
     </div>
 
-    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
       {categories.map((category) => (
         <a
           href="#"
-          class="group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-primary-200"
+          class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-primary-200"
         >
-          <div class="aspect-square rounded-xl overflow-hidden mb-4 bg-gray-50">
+          <div class="aspect-square rounded-t-2xl overflow-hidden bg-gray-50">
             <img
               src={category.image}
               alt={category.name}
               class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
             />
           </div>
-          <div class="text-center">
-            <h3 class="font-semibold text-gray-900 mb-1 group-hover:text-primary-600 transition-colors">
+          <div class="p-6 text-center">
+            <h3 class="font-bold text-lg text-gray-900 mb-2 group-hover:text-primary-600 transition-colors">
               {category.name}
             </h3>
-            <p class="text-sm text-gray-500">{category.productCount} Produk</p>
+            <p class="text-sm text-gray-500">{category.description}</p>
           </div>
         </a>
       ))}
     </div>
 
     <div class="text-center mt-12">
-      <a href="#" class="btn-secondary">
-        Lihat Semua Kategori
-        <svg class="inline-block w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+      <a href="https://wa.me/62851111204599" class="btn-primary inline-flex items-center gap-2">
+        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
         </svg>
+        Hubungi Kami
       </a>
     </div>
   </div>

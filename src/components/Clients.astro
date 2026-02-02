@@ -1,0 +1,72 @@
+---
+// Clients Section Component
+const clients = [
+  {
+    name: 'Pertamina',
+    initials: 'P',
+    logo: 'https://vidogarment.com/wp-content/uploads/2025/07/20250718_vido-red_web_hires.png'
+  },
+  {
+    name: 'PLN',
+    initials: 'PL',
+    logo: 'https://vidogarment.com/wp-content/uploads/2025/07/20250718_vido-red_web_hires.png'
+  },
+  {
+    name: 'Waskita',
+    initials: 'W',
+    logo: 'https://vidogarment.com/wp-content/uploads/2025/07/20250718_vido-red_web_hires.png'
+  },
+  {
+    name: 'Adhi Karya',
+    initials: 'AK',
+    logo: 'https://vidogarment.com/wp-content/uploads/2025/07/20250718_vido-red_web_hires.png'
+  },
+  {
+    name: 'Jasa Marga',
+    initials: 'JM',
+    logo: 'https://vidogarment.com/wp-content/uploads/2025/07/20250718_vido-red_web_hires.png'
+  },
+  {
+    name: 'Angkasa Pura',
+    initials: 'AP',
+    logo: 'https://vidogarment.com/wp-content/uploads/2025/07/20250718_vido-red_web_hires.png'
+  }
+];
+---
+
+<section id="clients" class="py-16 md:py-24 bg-white">
+  <div class="container-custom">
+    <div class="text-center space-y-4 mb-12">
+      <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900">
+        Dipercaya oleh 500+ Perusahaan
+      </h2>
+      <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+        Kami bangga menjadi mitra terpercaya dalam menyediakan perlengkapan safety untuk berbagai industri di Indonesia
+      </p>
+    </div>
+
+    <!-- Clients Grid -->
+    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
+      {clients.map((client) => (
+        <div class="group bg-gray-50 hover:bg-white rounded-xl p-6 flex flex-col items-center justify-center transition-all duration-300 hover:shadow-lg border border-gray-100 hover:border-primary-200">
+          <!-- Logo Container -->
+          <div class="w-20 h-20 bg-white rounded-lg flex items-center justify-center mb-3 shadow-sm group-hover:shadow-md transition-shadow">
+            <img
+              src={client.logo}
+              alt={client.name}
+              class="w-16 h-16 object-contain"
+            />
+          </div>
+
+          <!-- Initials Badge -->
+          <div class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mb-2">
+            <span class="text-primary-700 font-bold text-sm">{client.initials}</span>
+          </div>
+
+          <!-- Company Name -->
+          <p class="text-sm font-semibold text-gray-900 text-center">{client.name}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
