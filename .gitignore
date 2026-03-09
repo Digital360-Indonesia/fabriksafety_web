@@ -2,3 +2,4 @@ node_modules
 dist/
 .deployrc
 .DS_Store
+.astro/
