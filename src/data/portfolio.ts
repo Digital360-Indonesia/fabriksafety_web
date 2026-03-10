@@ -25,7 +25,7 @@ export const portfolios: Portfolio[] = [
     category: 'Rompi Safety',
     categoryEn: 'Safety Vest',
     clientName: 'PT Pertamina',
-    clientLogo: '/fs-logo.png',
+    clientLogo: '/images/clients/12.png',
     description: 'Rompi safety premium dengan material reflective berkualitas tinggi untuk karyawan PT Pertamina.',
     descriptionEn: 'Premium safety vest with high quality reflective material for PT Pertamina employees.',
     images: [
@@ -43,7 +43,7 @@ export const portfolios: Portfolio[] = [
     category: 'Coverall',
     categoryEn: 'Coverall',
     clientName: 'PLN Persero',
-    clientLogo: '/fs-logo.png',
+    clientLogo: '/images/clients/3.png',
     description: 'Coverall heavy duty untuk perlindungan menyeluruh karyawan PLN di seluruh Indonesia.',
     descriptionEn: 'Heavy duty coverall for complete protection of PLN employees throughout Indonesia.',
     images: [
@@ -97,7 +97,7 @@ export const portfolios: Portfolio[] = [
     category: 'Rompi Safety',
     categoryEn: 'Safety Vest',
     clientName: 'Kementerian PUPR',
-    clientLogo: '/fs-logo.png',
+    clientLogo: '/images/clients/2.png',
     description: 'Rompi safety dengan material reflective grade 1 untuk proyek konstruksi pemerintah.',
     descriptionEn: 'Safety vest with grade 1 reflective material for government construction projects.',
     images: [
@@ -115,7 +115,7 @@ export const portfolios: Portfolio[] = [
     category: 'Jaket Safety',
     categoryEn: 'Safety Jacket',
     clientName: 'BBWS',
-    clientLogo: '/fs-logo.png',
+    clientLogo: '/images/clients/2.png',
     description: 'Jaket teknisi dengan multiple pocket untuk tools dan kebutuhan lapangan.',
     descriptionEn: 'Technician jacket with multiple pockets for tools and field needs.',
     images: [
