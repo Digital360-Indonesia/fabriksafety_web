@@ -1,40 +1,13 @@
 ---
-// Clients Section Component
-const clients = [
-  {
-    name: 'Pertamina',
-    initials: 'P',
-    logo: 'https://vidogarment.com/wp-content/uploads/2025/07/20250718_vido-red_web_hires.png'
-  },
-  {
-    name: 'PLN',
-    initials: 'PL',
-    logo: 'https://vidogarment.com/wp-content/uploads/2025/07/20250718_vido-red_web_hires.png'
-  },
-  {
-    name: 'Waskita',
-    initials: 'W',
-    logo: 'https://vidogarment.com/wp-content/uploads/2025/07/20250718_vido-red_web_hires.png'
-  },
-  {
-    name: 'Adhi Karya',
-    initials: 'AK',
-    logo: 'https://vidogarment.com/wp-content/uploads/2025/07/20250718_vido-red_web_hires.png'
-  },
-  {
-    name: 'Jasa Marga',
-    initials: 'JM',
-    logo: 'https://vidogarment.com/wp-content/uploads/2025/07/20250718_vido-red_web_hires.png'
-  },
-  {
-    name: 'Angkasa Pura',
-    initials: 'AP',
-    logo: 'https://vidogarment.com/wp-content/uploads/2025/07/20250718_vido-red_web_hires.png'
-  }
-];
+// Clients Section Component - Logo Slider
+const clients = Array.from({ length: 40 }, (_, i) => ({
+  id: i + 1,
+  logo: `/images/clients/${i + 1}.png`,
+  name: `Client ${i + 1}`
+}));
 ---
 
-<section id="clients" class="py-16 md:py-24 bg-white">
+<section id="clients" class="py-16 md:py-24 bg-white overflow-hidden">
   <div class="container-custom">
     <div class="text-center space-y-4 mb-12">
       <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900">
@@ -44,29 +17,86 @@ const clients = [
         Kami bangga menjadi mitra terpercaya dalam menyediakan perlengkapan safety untuk berbagai industri di Indonesia
       </p>
     </div>
+  </div>
 
-    <!-- Clients Grid -->
-    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
-      {clients.map((client) => (
-        <div class="group bg-gray-50 hover:bg-white rounded-xl p-6 flex flex-col items-center justify-center transition-all duration-300 hover:shadow-lg border border-gray-100 hover:border-primary-200">
-          <!-- Logo Container -->
-          <div class="w-20 h-20 bg-white rounded-lg flex items-center justify-center mb-3 shadow-sm group-hover:shadow-md transition-shadow">
-            <img
-              src={client.logo}
-              alt={client.name}
-              class="w-16 h-16 object-contain"
-            />
+  <!-- Logo Slider -->
+  <div class="relative">
+    <!-- Gradient Overlays -->
+    <div class="absolute left-0 top-0 bottom-0 w-24 bg-gradient-to-r from-white to-transparent z-10 pointer-events-none"></div>
+    <div class="absolute right-0 top-0 bottom-0 w-24 bg-gradient-to-l from-white to-transparent z-10 pointer-events-none"></div>
+
+    <!-- Slider Container -->
+    <div class="slider-container">
+      <div class="slider-track">
+        <!-- First set of logos -->
+        {clients.map((client) => (
+          <div class="slider-item">
+            <div class="bg-gray-50 hover:bg-white rounded-xl p-6 flex items-center justify-center transition-all duration-300 hover:shadow-lg border border-gray-100 hover:border-primary-200 h-full">
+              <img
+                src={client.logo}
+                alt={client.name}
+                class="w-24 h-24 object-contain"
+                loading="lazy"
+              />
+            </div>
           </div>
-
-          <!-- Initials Badge -->
-          <div class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mb-2">
-            <span class="text-primary-700 font-bold text-sm">{client.initials}</span>
+        ))}
+        <!-- Duplicate set for seamless loop -->
+        {clients.map((client) => (
+          <div class="slider-item">
+            <div class="bg-gray-50 hover:bg-white rounded-xl p-6 flex items-center justify-center transition-all duration-300 hover:shadow-lg border border-gray-100 hover:border-primary-200 h-full">
+              <img
+                src={client.logo}
+                alt={client.name}
+                class="w-24 h-24 object-contain"
+                loading="lazy"
+              />
+            </div>
           </div>
-
-          <!-- Company Name -->
-          <p class="text-sm font-semibold text-gray-900 text-center">{client.name}</p>
-        </div>
-      ))}
+        ))}
+      </div>
     </div>
   </div>
 </section>
+
+<style>
+  .slider-container {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .slider-track {
+    display: flex;
+    gap: 1.5rem;
+    animation: scroll 60s linear infinite;
+    width: max-content;
+  }
+
+  .slider-track:hover {
+    animation-play-state: paused;
+  }
+
+  .slider-item {
+    flex-shrink: 0;
+    width: 150px;
+  }
+
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+
+  @media (max-width: 768px) {
+    .slider-item {
+      width: 120px;
+    }
+
+    .slider-track {
+      gap: 1rem;
+    }
+  }
+</style>
