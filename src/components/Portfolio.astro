@@ -139,44 +139,22 @@ const testimonials = [
     <style>
       .logo-item {
         flex-shrink: 0;
-        width: calc((100vw - 5rem) / 6);
-        min-width: 130px;
+        width: 160px;
         padding: 0.5rem;
-        height: 85px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
-
-      #logo-slider-2 {
-        flex-shrink: 0;
-        width: calc((100vw - 5rem) / 7);
-        min-width: 130px;
-        padding: 0.5rem;
-        height: 85px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
-      #logo-slider-3 {
-        flex-shrink: 0;
-        width: calc((100vw - 5rem) / 8);
-        min-width: 130px;
-        padding: 0.5rem;
-        height: 85px;
+        height: 75px;
         display: flex;
         align-items: center;
         justify-content: center;
       }
 
       @keyframes slideLeft {
-        0% { transform: translateX(0); }
-        100% { transform: translateX(-50%); }
+        0% { transform: translate3d(0, 0, 0); }
+        100% { transform: translate3d(-50%, 0, 0); }
       }
 
       @keyframes slideRight {
-        0% { transform: translateX(-50%); }
-        100% { transform: translateX(0); }
+        0% { transform: translate3d(-50%, 0, 0); }
+        100% { transform: translate3d(0, 0, 0); }
       }
 
       #logo-slider-1,
@@ -194,9 +172,8 @@ const testimonials = [
 
       @media (max-width: 768px) {
         .logo-item {
-          width: calc((100vw - 2rem) / 3);
-          min-width: 100px;
-          height: 70px;
+          width: 100px;
+          height: 60px;
         }
       }
     </style>
@@ -253,14 +230,8 @@ const testimonials = [
 
                 <!-- Author -->
                 <div class="flex items-center gap-3">
-                  <img
-                    src="/fs-logo.png"
-                    alt={testimonial.company}
-                    class="w-10 h-10 object-contain"
-                  />
                   <div>
                     <p class="font-semibold text-gray-900 text-sm">{testimonial.author}</p>
-                    <p class="text-xs text-gray-400">{testimonial.company}</p>
                   </div>
                 </div>
               </div>

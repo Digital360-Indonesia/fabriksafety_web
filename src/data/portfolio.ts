@@ -61,7 +61,7 @@ export const portfolios: Portfolio[] = [
     category: 'Jaket Safety',
     categoryEn: 'Safety Jacket',
     clientName: 'Freeport Indonesia',
-    clientLogo: '/fs-logo.png',
+    clientLogo: '/images/clients/freeport.png',
     description: 'Jaket mining dengan scotlight reflective untuk visibility maksimal di area tambang.',
     descriptionEn: 'Mining jacket with scotlight reflective for maximum visibility in mining areas.',
     images: [
@@ -79,7 +79,7 @@ export const portfolios: Portfolio[] = [
     category: 'Polo Shirt',
     categoryEn: 'Polo Shirt',
     clientName: 'FMM',
-    clientLogo: '/fs-logo.png',
+    clientLogo: '/images/clients/fmm.png',
     description: 'Kaos kerja professional dengan bahan lacoste premium untuk tampilan profesional.',
     descriptionEn: 'Professional work polo with premium lacoste material for a professional look.',
     images: [
@@ -133,7 +133,7 @@ export const portfolios: Portfolio[] = [
     category: 'Wearpack',
     categoryEn: 'Workwear',
     clientName: 'Kuehne + Nagel',
-    clientLogo: '/fs-logo.png',
+    clientLogo: '/images/clients/kuehne-nagel.png',
     description: 'Wearpack logistic dengan bahan drill america yang kuat untuk aktivitas gudang dan logistik.',
     descriptionEn: 'Logistic wearpack with strong american drill material for warehouse and logistics activities.',
     images: [
@@ -151,7 +151,7 @@ export const portfolios: Portfolio[] = [
     category: 'Wearpack',
     categoryEn: 'Workwear',
     clientName: 'Sinergi Gula',
-    clientLogo: '/fs-logo.png',
+    clientLogo: '/images/clients/sinergi-gula.png',
     description: 'Pakaian kerja industri dengan perlindungan maksimal untuk sektor manufaktur.',
     descriptionEn: 'Industrial workwear with maximum protection for the manufacturing sector.',
     images: [
