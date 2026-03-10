@@ -68,8 +68,13 @@ const clients = Array.from({ length: 40 }, (_, i) => ({
   .slider-track {
     display: flex;
     gap: 1.5rem;
-    animation: scroll 60s linear infinite;
+    animation: scroll 80s linear infinite;
     width: max-content;
+    /* Smooth rendering */
+    will-change: transform;
+    transform: translateZ(0);
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
   }
 
   .slider-track:hover {
@@ -83,10 +88,10 @@ const clients = Array.from({ length: 40 }, (_, i) => ({
 
   @keyframes scroll {
     0% {
-      transform: translateX(0);
+      transform: translate3d(0, 0, 0);
     }
     100% {
-      transform: translateX(-50%);
+      transform: translate3d(-50%, 0, 0);
     }
   }
 

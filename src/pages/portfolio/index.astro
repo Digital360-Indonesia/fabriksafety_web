@@ -5,7 +5,7 @@ import { portfolios } from '../../data/portfolio';
 
 <BaseLayout title="Portfolio - Fabrik Safety">
   <!-- Hero Section -->
-  <section class="bg-gradient-to-r from-primary-600 to-primary-800 text-white py-16 md:py-24">
+  <section class="bg-gradient-to-r from-primary-600 to-primary-800 text-white py-16 md:py-24 relative overflow-hidden">
     <div class="container-custom">
       <div class="text-center">
         <h1 class="text-4xl md:text-5xl font-bold mb-4"
@@ -23,46 +23,59 @@ import { portfolios } from '../../data/portfolio';
   </section>
 
   <!-- Portfolio Grid -->
-  <section class="py-16 md:py-24 bg-gray-50">
+  <section id="portfolio" class="py-16 md:py-24 bg-gray-50 isolate">
     <div class="container-custom">
+      <div class="text-center space-y-4 mb-12">
+        <h2 class="section-title"
+          data-id="Portfolio Klien"
+          data-en="Client Portfolio"
+        >Portfolio Klien</h2>
+        <p class="section-subtitle max-w-2xl mx-auto"
+          data-id="Dipercaya oleh perusahaan-perusahaan besar untuk menyediakan pakaian safety berkualitas tinggi"
+          data-en="Trusted by major companies to provide high-quality safety wear"
+        >
+          Dipercaya oleh perusahaan-perusahaan besar untuk menyediakan pakaian safety berkualitas tinggi
+        </p>
+      </div>
+
       <!-- Mobile Slider -->
-      <div class="md:hidden relative mb-8">
+      <div class="md:hidden relative mb-8 pointer-events-auto">
         <div id="portfolio-slider" class="flex gap-4 overflow-x-auto snap-x snap-mandatory scrollbar-hide" style="scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch;">
-          {portfolios.map((portfolio) => (
+          {portfolios.map((item) => (
             <a
-              href={`/portfolio/${portfolio.slug}`}
+              href={`/portfolio/${item.slug}`}
               class="flex-shrink-0 w-72 snap-center group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300"
             >
               <div class="relative aspect-square bg-gray-100 overflow-hidden">
                 <img
-                  src={portfolio.mainImage}
-                  alt={portfolio.productName}
+                  src={item.mainImage}
+                  alt={item.productName}
                   class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                   loading="lazy"
                 />
                 <div class="absolute bottom-0 left-0 right-0 bg-primary-600/80 p-4 translate-y-full group-hover:translate-y-0 group-active:translate-y-0 transition-transform duration-300">
-                  <h3 class="text-white font-bold text-center">{portfolio.clientName}</h3>
+                  <h3 class="text-white font-bold text-center">{item.clientName}</h3>
                 </div>
               </div>
               <div class="p-5">
                 <h3 class="font-bold text-gray-900 mb-1 group-hover:text-primary-600 transition-colors"
-                  data-id={portfolio.productName}
-                  data-en={portfolio.productNameEn}
+                  data-id={item.productName}
+                  data-en={item.productNameEn}
                 >
-                  {portfolio.productName}
+                  {item.productName}
                 </h3>
                 <p class="text-sm text-gray-500 mb-3 line-clamp-2"
-                  data-id={portfolio.description}
-                  data-en={portfolio.descriptionEn}
-                >{portfolio.description}</p>
+                  data-id={item.description}
+                  data-en={item.descriptionEn}
+                >{item.description}</p>
                 <div class="flex items-center justify-between pt-3 border-t border-gray-100">
                   <span class="text-xs text-gray-400"
                     data-id="Klien"
                     data-en="Client"
                   >Klien</span>
                   <img
-                    src={portfolio.clientLogo}
-                    alt={portfolio.clientName}
+                    src={item.clientLogo}
+                    alt={item.clientName}
                     class="h-8 w-auto object-contain"
                   />
                 </div>
@@ -84,42 +97,42 @@ import { portfolios } from '../../data/portfolio';
       </div>
 
       <!-- Desktop Grid -->
-      <div class="hidden md:grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-        {portfolios.map((portfolio) => (
+      <div class="hidden md:grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 relative z-10">
+        {portfolios.map((item) => (
           <a
-            href={`/portfolio/${portfolio.slug}`}
+            href={`/portfolio/${item.slug}`}
             class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300"
           >
             <div class="relative aspect-square bg-gray-100 overflow-hidden">
               <img
-                src={portfolio.mainImage}
-                alt={portfolio.productName}
+                src={item.mainImage}
+                alt={item.productName}
                 class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                 loading="lazy"
               />
               <div class="absolute bottom-0 left-0 right-0 bg-primary-600/80 p-4 translate-y-full group-hover:translate-y-0 group-active:translate-y-0 transition-transform duration-300">
-                <h3 class="text-white font-bold text-center">{portfolio.clientName}</h3>
+                <h3 class="text-white font-bold text-center">{item.clientName}</h3>
               </div>
             </div>
             <div class="p-5">
               <h3 class="font-bold text-gray-900 mb-1 group-hover:text-primary-600 transition-colors"
-                data-id={portfolio.productName}
-                data-en={portfolio.productNameEn}
+                data-id={item.productName}
+                data-en={item.productNameEn}
               >
-                {portfolio.productName}
+                {item.productName}
               </h3>
               <p class="text-sm text-gray-500 mb-3 line-clamp-2"
-                data-id={portfolio.description}
-                data-en={portfolio.descriptionEn}
-              >{portfolio.description}</p>
+                data-id={item.description}
+                data-en={item.descriptionEn}
+              >{item.description}</p>
               <div class="flex items-center justify-between pt-3 border-t border-gray-100">
                 <span class="text-xs text-gray-400"
                   data-id="Klien"
                   data-en="Client"
                 >Klien</span>
                 <img
-                  src={portfolio.clientLogo}
-                  alt={portfolio.clientName}
+                  src={item.clientLogo}
+                  alt={item.clientName}
                   class="h-8 w-auto object-contain"
                 />
               </div>
@@ -157,13 +170,6 @@ import { portfolios } from '../../data/portfolio';
   }
   .scrollbar-hide::-webkit-scrollbar {
     display: none;
-  }
-
-  .line-clamp-2 {
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
   }
 </style>
 
