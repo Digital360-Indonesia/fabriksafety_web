@@ -3,7 +3,7 @@ title: "Standar Keselamatan Kerja di Indonesia: Regulasi dan Implementasi"
 titleEn: "Workplace Safety Standards in Indonesia: Regulations and Implementation"
 description: "Panduan lengkap standar keselamatan kerja Indonesia: regulasi UU, SNI, APD wajib, sertifikasi, dan cara membangun budaya safety di perusahaan."
 descriptionEn: "Complete guide to Indonesian workplace safety standards: regulations, SNI standards, mandatory PPE, certification, and building safety culture."
-pubDate: 2026-03-11
+pubDate: 2026-01-03
 author: "Fabrik Safety Team"
 image: "/images/about/team-consultation.webp"
 tags: ["keselamatan kerja", "regulasi", "SNI", "APD", "K3"]

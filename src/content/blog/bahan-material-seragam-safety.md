@@ -3,7 +3,7 @@ title: "Bahan Material Seragam Safety Terbaik: Cotton vs Polyester vs Drill"
 titleEn: "Best Safety Uniform Materials: Cotton vs Polyester vs Drill"
 description: "Panduan lengkap memilih bahan material seragam safety: perbandingan cotton, polyester, drill, TC, dan material khusus untuk kebutuhan industri berbeda."
 descriptionEn: "Complete guide to choosing safety uniform materials: comparison of cotton, polyester, drill, TC, and special materials for different industrial needs."
-pubDate: 2026-03-12
+pubDate: 2026-01-06
 author: "Fabrik Safety Team"
 image: "/images/about/team-consultation.webp"
 tags: ["bahan seragam safety", "material safety", "cotton drill", "polyester"]

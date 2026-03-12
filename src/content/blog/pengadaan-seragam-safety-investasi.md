@@ -3,7 +3,7 @@ title: "Pengadaan Seragam Safety: Investasi atau Pengeluaran Biasa?"
 titleEn: "Safety Uniform Procurement: Investment or Ordinary Expense?"
 description: "Analisis lengkap pengadaan seragam safety: ROI, cost-benefit analysis, tips penghematan, dan cara menjadikan seragam safety sebagai investasi perusahaan yang menguntungkan."
 descriptionEn: "Complete analysis of safety uniform procurement: ROI, cost-benefit analysis, cost-saving tips, and how to make safety uniforms a profitable company investment."
-pubDate: 2026-03-12
+pubDate: 2026-01-08
 author: "Fabrik Safety Team"
 image: "/images/about/team-consultation.webp"
 tags: ["pengadaan seragam safety", "investasi safety", "procurement"]

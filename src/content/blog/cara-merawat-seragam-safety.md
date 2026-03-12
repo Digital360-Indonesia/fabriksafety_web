@@ -3,7 +3,7 @@ title: "Cara Merawat Seragam Safety agar Tahan Lama"
 titleEn: "How to Maintain Safety Uniforms for Longevity"
 description: "Panduan lengkap cara merawat seragam safety: tips mencuci, menyimpan, dan merawat berbagai jenis material seragam safety agar tahan lama dan tetap efektif."
 descriptionEn: "Complete guide to maintaining safety uniforms: washing, storing, and caring tips for various types of safety uniform materials to ensure longevity and effectiveness."
-pubDate: 2026-03-12
+pubDate: 2026-01-07
 author: "Fabrik Safety Team"
 image: "/images/about/team-consultation.webp"
 tags: ["perawatan seragam", "cuci seragam safety", "tips safety"]

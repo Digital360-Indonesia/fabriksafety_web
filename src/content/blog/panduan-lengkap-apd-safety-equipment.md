@@ -3,7 +3,7 @@ title: "Panduan Lengkap APD dan Safety Equipment: Dari Helm hingga Sepatu"
 titleEn: "Complete Guide to PPE and Safety Equipment: From Helmets to Boots"
 description: "Panduan komprehensif tentang Alat Pelindung Diri (APD): helm safety, sepatu safety, sarung tangan, kacamata, ear plug, dan respirator untuk keselamatan kerja."
 descriptionEn: "Comprehensive guide to Personal Protective Equipment (PPE): safety helmets, safety boots, gloves, goggles, ear plugs, and respirators for workplace safety."
-pubDate: 2026-03-11
+pubDate: 2026-01-04
 author: "Fabrik Safety Team"
 image: "/images/about/team-consultation.webp"
 tags: ["APD", "safety equipment", "helm safety", "sepatu safety", "K3"]
