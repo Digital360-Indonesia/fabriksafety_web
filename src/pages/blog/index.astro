@@ -11,6 +11,9 @@ blogPosts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 
 // Featured posts
 const featuredPosts = blogPosts.filter(post => post.data.featured);
+
+// Default image fallback
+const defaultImage = "/images/about/team-consultation.webp";
 ---
 
 <BaseLayout title="Blog - Fabrik Safety">
@@ -126,19 +129,12 @@ const featuredPosts = blogPosts.filter(post => post.data.featured);
               >
                 {post.data.description}
               </p>
-              <div class="flex items-center justify-between pt-3 border-t border-gray-100">
-                <div class="flex items-center gap-2 text-xs text-gray-500">
-                  <span>{post.data.author}</span>
-                  <span>•</span>
-                  <time datetime={post.data.pubDate.toISOString()}>
-                    {post.data.pubDate.toLocaleDateString('id-ID', { day: 'numeric', month: 'short', year: 'numeric' })}
-                  </time>
-                </div>
-                <div class="flex gap-2">
-                  {post.data.tags.slice(0, 2).map(tag => (
-                    <span class="text-xs text-gray-400">#{tag}</span>
-                  ))}
-                </div>
+              <div class="flex items-center gap-2 text-xs text-gray-500 pt-3 border-t border-gray-100">
+                <span>{post.data.author}</span>
+                <span>•</span>
+                <time datetime={post.data.pubDate.toISOString()}>
+                  {post.data.pubDate.toLocaleDateString('id-ID', { day: 'numeric', month: 'short', year: 'numeric' })}
+                </time>
               </div>
             </div>
           </a>
@@ -176,19 +172,12 @@ const featuredPosts = blogPosts.filter(post => post.data.featured);
               >
                 {post.data.description}
               </p>
-              <div class="flex items-center justify-between pt-3 border-t border-gray-100">
-                <div class="flex items-center gap-2 text-xs text-gray-500">
-                  <span>{post.data.author}</span>
-                  <span>•</span>
-                  <time datetime={post.data.pubDate.toISOString()}>
-                    {post.data.pubDate.toLocaleDateString('id-ID', { day: 'numeric', month: 'short', year: 'numeric' })}
-                  </time>
-                </div>
-                <div class="flex gap-2">
-                  {post.data.tags.slice(0, 2).map(tag => (
-                    <span class="text-xs text-gray-400">#{tag}</span>
-                  ))}
-                </div>
+              <div class="flex items-center gap-2 text-xs text-gray-500 pt-3 border-t border-gray-100">
+                <span>{post.data.author}</span>
+                <span>•</span>
+                <time datetime={post.data.pubDate.toISOString()}>
+                  {post.data.pubDate.toLocaleDateString('id-ID', { day: 'numeric', month: 'short', year: 'numeric' })}
+                </time>
               </div>
             </div>
           </a>
