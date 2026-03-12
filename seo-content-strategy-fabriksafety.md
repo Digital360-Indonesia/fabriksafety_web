@@ -15,7 +15,7 @@
 |------|----------|-------|---------|
 | Fase 1 | Pillar Content | 4 | 4 ✅ |
 | Fase 2 | Cluster Pillar 1 (Seragam Safety) | 7 | 7 ✅ |
-| Fase 3 | Cluster Pillar 2 (Wearpack) | 7 | 1 |
+| Fase 3 | Cluster Pillar 2 (Wearpack) | 7 | 7 ✅ |
 | Fase 4 | Cluster Pillar 3 (Regulasi) | 6 | 0 |
 | Fase 5 | Cluster Pillar 4 (APD) | 6 | 0 |
 | Fase 6 | Artikel Vendor & Supplier (NEW) | 5 | 0 |
@@ -53,12 +53,12 @@
 | # | Kode | Judul | Status | File |
 |---|------|-------|--------|------|
 | 12 | C2.1 | Seragam Safety Custom Logo untuk Branding Perusahaan | ✅ | seragam-safety-custom-logo-branding.md |
-| 13 | C2.2 | Perbedaan Wearpack dan Coverall | ⬜ | - |
-| 14 | C2.3 | Seragam Safety untuk Berbagai Industri | ⬜ | - |
-| 15 | C2.4 | Pengadaan Seragam Safety Skala Besar: Tips Procurement | ⬜ | - |
-| 16 | C2.5 | Desain Wearpack Modern dan Fungsional | ⬜ | - |
-| 17 | C2.6 | Wearpack Anti Api dan Tahan Panas | ⬜ | - |
-| 18 | C2.7 | Wearpack Waterproof untuk Industri Basah | ⬜ | - |
+| 13 | C2.2 | Perbedaan Wearpack dan Coverall | ✅ | perbedaan-wearpack-dan-coverall.md |
+| 14 | C2.3 | Seragam Safety untuk Berbagai Industri | ✅ | seragam-safety-untuk-berbagai-industri.md |
+| 15 | C2.4 | Pengadaan Seragam Safety Skala Besar: Tips Procurement | ✅ | pengadaan-seragam-safety-skala-besar.md |
+| 16 | C2.5 | Desain Wearpack Modern dan Fungsional | ✅ | desain-wearpack-modern.md |
+| 17 | C2.6 | Wearpack Anti Api dan Tahan Panas | ✅ | wearpack-anti-api-tahan-panas.md |
+| 18 | C2.7 | Wearpack Waterproof untuk Industri Basah | ✅ | wearpack-waterproof-industri.md |
 
 ### Fase 4: Cluster Pillar 3
 | # | Kode | Judul | Status | File |
