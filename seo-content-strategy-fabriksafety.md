@@ -8,7 +8,7 @@
 
 | Total Artikel | Selesai | In Progress | Pending |
 |---------------|---------|-------------|---------|
-| 40 | 11 | 0 | 29 |
+| 40 | 19 | 0 | 21 |
 
 ### Breakdown per Fase:
 | Fase | Kategori | Total | Selesai |
@@ -16,8 +16,8 @@
 | Fase 1 | Pillar Content | 4 | 4 ✅ |
 | Fase 2 | Cluster Pillar 1 (Seragam Safety) | 7 | 7 ✅ |
 | Fase 3 | Cluster Pillar 2 (Wearpack) | 7 | 7 ✅ |
-| Fase 4 | Cluster Pillar 3 (Regulasi) | 6 | 0 |
-| Fase 5 | Cluster Pillar 4 (APD) | 6 | 0 |
+| Fase 4 | Cluster Pillar 3 (Regulasi) | 6 | 6 ✅ |
+| Fase 5 | Cluster Pillar 4 (APD) | 6 | 2 |
 | Fase 6 | Artikel Vendor & Supplier (NEW) | 5 | 0 |
 | Fase 7 | Artikel Industri Spesifik (NEW) | 5 | 0 |
 
@@ -63,18 +63,18 @@
 ### Fase 4: Cluster Pillar 3
 | # | Kode | Judul | Status | File |
 |---|------|-------|--------|------|
-| 19 | C3.1 | Regulasi Keselamatan Kerja Indonesia | ⬜ | - |
-| 20 | C3.2 | APD Wajib di Tempat Kerja | ⬜ | - |
-| 21 | C3.3 | Sertifikasi Seragam Safety SNI | ⬜ | - |
-| 22 | C3.4 | Audit Keselamatan dan Seragam Kerja | ⬜ | - |
-| 23 | C3.5 | Membangun Budaya Safety di Perusahaan | ⬜ | - |
-| 24 | C3.6 | Insentif dan Hukuman Terkait APD | ⬜ | - |
+| 19 | C3.1 | Regulasi Keselamatan Kerja Indonesia | ✅ | regulasi-keselamatan-kerja-indonesia.md |
+| 20 | C3.2 | APD Wajib di Tempat Kerja | ✅ | apd-wajib-tempat-kerja.md |
+| 21 | C3.3 | Sertifikasi Seragam Safety SNI | ✅ | sertifikasi-seragam-safety-sni.md |
+| 22 | C3.4 | Audit Keselamatan dan Seragam Kerja | ✅ | audit-keselamatan-seragam-kerja.md |
+| 23 | C3.5 | Membangun Budaya Safety di Perusahaan | ✅ | membangun-budaya-safety-perusahaan.md |
+| 24 | C3.6 | Insentif dan Hukuman Terkait APD | ✅ | insentif-dan-sanksi-apd.md |
 
 ### Fase 5: Cluster Pillar 4
 | # | Kode | Judul | Status | File |
 |---|------|-------|--------|------|
-| 25 | C4.1 | Helm Safety: Panduan Memilih yang Tepat | ⬜ | - |
-| 26 | C4.2 | Sepatu Safety: Jenis dan Standar | ⬜ | - |
+| 25 | C4.1 | Helm Safety: Panduan Memilih yang Tepat | ✅ | helm-safety-panduan-memilih.md |
+| 26 | C4.2 | Sepatu Safety: Jenis dan Standar | ✅ | sepatu-safety-jenis-dan-standar.md |
 | 27 | C4.3 | Sarung Tangan Kerja: Pemilihan Berdasarkan Risiko | ⬜ | - |
 | 28 | C4.4 | Kacamata Safety dan Face Shield | ⬜ | - |
 | 29 | C4.5 | Ear Plug dan Ear Muff: Proteksi Pendengaran | ⬜ | - |
@@ -569,20 +569,20 @@ Artikel tentang standar dan regulasi.
 
 | Kode | Artikel | Status | Tanggal Target | File |
 |------|---------|--------|----------------|------|
-| C3.1 | Regulasi Keselamatan Kerja | ⬜ | Minggu 7 | - |
-| C3.2 | APD Wajib di Tempat Kerja | ⬜ | Minggu 7 | - |
-| C3.3 | Sertifikasi Seragam Safety SNI | ⬜ | Minggu 7 | - |
-| C3.4 | Audit Keselamatan dan Seragam Kerja | ⬜ | Minggu 8 | - |
-| C3.5 | Membangun Budaya Safety | ⬜ | Minggu 8 | - |
-| C3.6 | Insentif dan Sanksi Terkait APD | ⬜ | Minggu 8 | - |
+| C3.1 | Regulasi Keselamatan Kerja | ✅ | Minggu 7 | regulasi-keselamatan-kerja-indonesia.md |
+| C3.2 | APD Wajib di Tempat Kerja | ✅ | Minggu 7 | apd-wajib-tempat-kerja.md |
+| C3.3 | Sertifikasi Seragam Safety SNI | ✅ | Minggu 7 | sertifikasi-seragam-safety-sni.md |
+| C3.4 | Audit Keselamatan dan Seragam Kerja | ✅ | Minggu 8 | audit-keselamatan-seragam-kerja.md |
+| C3.5 | Membangun Budaya Safety | ✅ | Minggu 8 | membangun-budaya-safety-perusahaan.md |
+| C3.6 | Insentif dan Sanksi Terkait APD | ✅ | Minggu 8 | insentif-dan-sanksi-apd.md |
 
 ### Fase 5: Cluster Pillar 4 (Minggu 9-10)
 Artikel tentang APD dan safety equipment.
 
 | Kode | Artikel | Status | Tanggal Target | File |
 |------|---------|--------|----------------|------|
-| C4.1 | Helm Safety: Panduan Memilih | ⬜ | Minggu 9 | - |
-| C4.2 | Sepatu Safety: Jenis dan Standar | ⬜ | Minggu 9 | - |
+| C4.1 | Helm Safety: Panduan Memilih | ✅ | Minggu 9 | helm-safety-panduan-memilih.md |
+| C4.2 | Sepatu Safety: Jenis dan Standar | ✅ | Minggu 9 | sepatu-safety-jenis-dan-standar.md |
 | C4.3 | Sarung Tangan Kerja | ⬜ | Minggu 9 | - |
 | C4.4 | Kacamata Safety dan Face Shield | ⬜ | Minggu 10 | - |
 | C4.5 | Ear Plug dan Ear Muff | ⬜ | Minggu 10 | - |
