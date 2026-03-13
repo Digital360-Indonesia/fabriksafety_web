@@ -5,7 +5,7 @@ description: "Panduan lengkap sertifikasi SNI untuk seragam safety: standar yang
 descriptionEn: "Complete guide to SNI certification for safety uniforms: applicable standards, certification process, benefits for companies, and tips for choosing certified vendors."
 pubDate: 2026-01-21
 author: "Fabrik Safety Team"
-image: "/images/about/team-consultation.webp"
+image: "/images/blog/sertifikasi-seragam-safety-sni.png"
 tags: ["sertifikasi SNI", "seragam safety SNI", "standar seragam safety", "SNI 8415"]
 category: "Regulasi"
 featured: false

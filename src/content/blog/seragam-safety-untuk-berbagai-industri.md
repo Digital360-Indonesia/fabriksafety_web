@@ -5,7 +5,7 @@ description: "Panduan lengkap seragam safety untuk berbagai industri: tambang, k
 descriptionEn: "Complete guide to safety uniforms for various industries: mining, construction, manufacturing, oil & gas, healthcare, and tips for choosing the right uniform per industry."
 pubDate: 2026-01-14
 author: "Fabrik Safety Team"
-image: "/images/about/team-consultation.webp"
+image: "/images/blog/seragam-safety-untuk-berbagai-industri.png"
 tags: ["seragam safety industri", "wearpack pabrik", "seragam kerja", "pakaian safety"]
 category: "Panduan"
 featured: false

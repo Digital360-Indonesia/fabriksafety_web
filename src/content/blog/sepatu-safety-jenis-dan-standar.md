@@ -5,7 +5,7 @@ description: "Panduan lengkap sepatu safety: jenis-jenis (safety toe, slip resis
 descriptionEn: "Complete guide to safety shoes: types (safety toe, slip resistant, etc), SNI and international standards, how to choose, proper sizing, and maintenance."
 pubDate: 2026-01-26
 author: "Fabrik Safety Team"
-image: "/images/about/team-consultation.webp"
+image: "/images/blog/sepatu-safety-jenis-dan-standar.png"
 tags: ["sepatu safety", "safety shoes", "sepatu kerja", "APD kaki"]
 category: "APD"
 featured: false

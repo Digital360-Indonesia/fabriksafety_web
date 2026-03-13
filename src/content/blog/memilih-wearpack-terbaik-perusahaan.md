@@ -5,7 +5,7 @@ description: "Panduan lengkap memilih wearpack untuk perusahaan: tips procuremen
 descriptionEn: "Complete guide to choosing wearpack for your company: procurement tips, selection criteria, wearpack vs coverall differences, and industry recommendations."
 pubDate: 2026-01-02
 author: "Fabrik Safety Team"
-image: "/images/about/team-consultation.webp"
+image: "/images/blog/memilih-wearpack-terbaik-perusahaan.png"
 tags: ["wearpack", "pakaian safety", "procurement", "perusahaan"]
 category: "Panduan"
 featured: true

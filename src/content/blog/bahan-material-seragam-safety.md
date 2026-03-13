@@ -5,7 +5,7 @@ description: "Panduan lengkap memilih bahan material seragam safety: perbandinga
 descriptionEn: "Complete guide to choosing safety uniform materials: comparison of cotton, polyester, drill, TC, and special materials for different industrial needs."
 pubDate: 2026-01-06
 author: "Fabrik Safety Team"
-image: "/images/about/team-consultation.webp"
+image: "/images/blog/bahan-material-seragam-safety.png"
 tags: ["bahan seragam safety", "material safety", "cotton drill", "polyester"]
 category: "Panduan"
 featured: false

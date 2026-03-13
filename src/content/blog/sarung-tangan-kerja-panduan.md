@@ -5,7 +5,7 @@ description: "Panduan lengkap memilih sarung tangan kerja yang tepat berdasarkan
 descriptionEn: "Complete guide to choosing the right work gloves based on workplace risk types. Learn about standards, materials, and safety glove care tips."
 pubDate: 2026-01-27
 author: "Fabrik Safety Team"
-image: "/images/about/team-consultation.webp"
+image: "/images/blog/sarung-tangan-kerja-panduan.png"
 tags: ["safety", "sarung tangan", "APD", "alat pelindung diri"]
 category: "Alat Pelindung Diri"
 featured: false

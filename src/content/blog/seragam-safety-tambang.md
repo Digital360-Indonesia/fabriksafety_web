@@ -5,7 +5,7 @@ description: "Panduan lengkap tentang seragam safety tambang yang memenuhi stand
 descriptionEn: "Complete guide to mining safety uniforms that meet OHS standards. Material specifications, mandatory features, and regulations for Indonesia's mining industry."
 pubDate: 2026-02-05
 author: "Fabrik Safety Team"
-image: "/images/about/team-consultation.webp"
+image: "/images/blog/seragam-safety-tambang.webp"
 tags: ["seragam safety tambang", "pakaian safety mining", "wearpack tambang"]
 category: "Industri Spesifik"
 featured: false

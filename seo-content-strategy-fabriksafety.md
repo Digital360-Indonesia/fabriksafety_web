@@ -6,9 +6,14 @@
 
 ## 📊 Progress Overview
 
-| Total Artikel | Selesai | In Progress | Pending |
-|---------------|---------|-------------|---------|
-| 40 | 40 | 0 | 0 |
+| Total Artikel | Selesai | Cover Image |
+|---------------|---------|-------------|
+| 40 | 40 ✅ | 40 / 40 🖼️ |
+
+### Cover Image Progress
+| Total Cover | Selesai (🖼️) | Pending (⬜) |
+|-------------|--------------|--------------|
+| 40 | 40 | 0 |
 
 ### Breakdown per Fase:
 | Fase | Kategori | Total | Selesai |
@@ -26,77 +31,81 @@
 - 🔄 In Progress - Sedang dikerjakan
 - ✅ Done - Sudah selesai
 
+### Cover Image Status Legend
+- 🖼️ Cover image sudah di-generate dengan AI
+- ⬜ Cover image belum di-generate (masih pakai placeholder)
+
 ---
 
 ## 📋 DAFTAR ARTIKEL (Quick View)
 
 ### Fase 1: Pillar Content
-| # | Kode | Judul | Status | File |
-|---|------|-------|--------|------|
-| 1 | P1 | Panduan Lengkap Pakaian Safety Industri | ✅ | panduan-lengkap-pakaian-safety-industri.md |
-| 2 | P2 | Memilih Wearpack Terbaik untuk Perusahaan | ✅ | memilih-wearpack-terbaik-perusahaan.md |
-| 3 | P3 | Standar Keselamatan Kerja di Indonesia | ✅ | standar-keselamatan-kerja-indonesia.md |
-| 4 | P4 | Panduan Lengkap APD dan Safety Equipment | ✅ | panduan-lengkap-apd-safety-equipment.md |
+| # | Kode | Judul | Status | Cover | File |
+|---|------|-------|--------|-------|------|
+| 1 | P1 | Panduan Lengkap Pakaian Safety Industri | ✅ | 🖼️ | panduan-lengkap-pakaian-safety-industri.md |
+| 2 | P2 | Memilih Wearpack Terbaik untuk Perusahaan | ✅ | 🖼️ | memilih-wearpack-terbaik-perusahaan.md |
+| 3 | P3 | Standar Keselamatan Kerja di Indonesia | ✅ | 🖼️ | standar-keselamatan-kerja-indonesia.md |
+| 4 | P4 | Panduan Lengkap APD dan Safety Equipment | ✅ | 🖼️ | panduan-lengkap-apd-safety-equipment.md |
 
 ### Fase 2: Cluster Pillar 1
-| # | Kode | Judul | Status | File |
-|---|------|-------|--------|------|
-| 5 | C1.1 | Jenis-jenis Seragam Safety dan Fungsinya | ✅ | jenis-seragam-safety-dan-fungsinya.md |
-| 6 | C1.2 | Bahan Material Seragam Safety Terbaik | ✅ | bahan-material-seragam-safety.md |
-| 7 | C1.3 | Cara Merawat Seragam Safety | ✅ | cara-merawat-seragam-safety.md |
-| 8 | C1.4 | Pengadaan Seragam Safety: Investasi vs Pengeluaran | ✅ | pengadaan-seragam-safety-investasi.md |
-| 9 | C1.5 | Ukuran Seragam Safety: Panduan Lengkap | ✅ | panduan-ukuran-seragam-safety.md |
-| 10 | C1.6 | Warna Seragam Safety dan Maknanya | ✅ | warna-seragam-safety-dan-maknanya.md |
-| 11 | C1.7 | Tren Seragam Safety Modern 2024-2025 | ✅ | tren-seragam-safety-modern.md |
+| # | Kode | Judul | Status | Cover | File |
+|---|------|-------|--------|-------|------|
+| 5 | C1.1 | Jenis-jenis Seragam Safety dan Fungsinya | ✅ | 🖼️ | jenis-seragam-safety-dan-fungsinya.md |
+| 6 | C1.2 | Bahan Material Seragam Safety Terbaik | ✅ | 🖼️ | bahan-material-seragam-safety.md |
+| 7 | C1.3 | Cara Merawat Seragam Safety | ✅ | 🖼️ | cara-merawat-seragam-safety.md |
+| 8 | C1.4 | Pengadaan Seragam Safety: Investasi vs Pengeluaran | ✅ | 🖼️ | pengadaan-seragam-safety-investasi.md |
+| 9 | C1.5 | Ukuran Seragam Safety: Panduan Lengkap | ✅ | 🖼️ | panduan-ukuran-seragam-safety.md |
+| 10 | C1.6 | Warna Seragam Safety dan Maknanya | ✅ | 🖼️ | warna-seragam-safety-dan-maknanya.md |
+| 11 | C1.7 | Tren Seragam Safety Modern 2024-2025 | ✅ | 🖼️ | tren-seragam-safety-modern.md |
 
 ### Fase 3: Cluster Pillar 2
-| # | Kode | Judul | Status | File |
-|---|------|-------|--------|------|
-| 12 | C2.1 | Seragam Safety Custom Logo untuk Branding Perusahaan | ✅ | seragam-safety-custom-logo-branding.md |
-| 13 | C2.2 | Perbedaan Wearpack dan Coverall | ✅ | perbedaan-wearpack-dan-coverall.md |
-| 14 | C2.3 | Seragam Safety untuk Berbagai Industri | ✅ | seragam-safety-untuk-berbagai-industri.md |
-| 15 | C2.4 | Pengadaan Seragam Safety Skala Besar: Tips Procurement | ✅ | pengadaan-seragam-safety-skala-besar.md |
-| 16 | C2.5 | Desain Wearpack Modern dan Fungsional | ✅ | desain-wearpack-modern.md |
-| 17 | C2.6 | Wearpack Anti Api dan Tahan Panas | ✅ | wearpack-anti-api-tahan-panas.md |
-| 18 | C2.7 | Wearpack Waterproof untuk Industri Basah | ✅ | wearpack-waterproof-industri.md |
+| # | Kode | Judul | Status | Cover | File |
+|---|------|-------|--------|-------|------|
+| 12 | C2.1 | Seragam Safety Custom Logo untuk Branding Perusahaan | ✅ | 🖼️ | seragam-safety-custom-logo-branding.md |
+| 13 | C2.2 | Perbedaan Wearpack dan Coverall | ✅ | 🖼️ | perbedaan-wearpack-dan-coverall.md |
+| 14 | C2.3 | Seragam Safety untuk Berbagai Industri | ✅ | 🖼️ | seragam-safety-untuk-berbagai-industri.md |
+| 15 | C2.4 | Pengadaan Seragam Safety Skala Besar: Tips Procurement | ✅ | 🖼️ | pengadaan-seragam-safety-skala-besar.md |
+| 16 | C2.5 | Desain Wearpack Modern dan Fungsional | ✅ | 🖼️ | desain-wearpack-modern.md |
+| 17 | C2.6 | Wearpack Anti Api dan Tahan Panas | ✅ | 🖼️ | wearpack-anti-api-tahan-panas.md |
+| 18 | C2.7 | Wearpack Waterproof untuk Industri Basah | ✅ | 🖼️ | wearpack-waterproof-industri.md |
 
 ### Fase 4: Cluster Pillar 3
-| # | Kode | Judul | Status | File |
-|---|------|-------|--------|------|
-| 19 | C3.1 | Regulasi Keselamatan Kerja Indonesia | ✅ | regulasi-keselamatan-kerja-indonesia.md |
-| 20 | C3.2 | APD Wajib di Tempat Kerja | ✅ | apd-wajib-tempat-kerja.md |
-| 21 | C3.3 | Sertifikasi Seragam Safety SNI | ✅ | sertifikasi-seragam-safety-sni.md |
-| 22 | C3.4 | Audit Keselamatan dan Seragam Kerja | ✅ | audit-keselamatan-seragam-kerja.md |
-| 23 | C3.5 | Membangun Budaya Safety di Perusahaan | ✅ | membangun-budaya-safety-perusahaan.md |
-| 24 | C3.6 | Insentif dan Hukuman Terkait APD | ✅ | insentif-dan-sanksi-apd.md |
+| # | Kode | Judul | Status | Cover | File |
+|---|------|-------|--------|-------|------|
+| 19 | C3.1 | Regulasi Keselamatan Kerja Indonesia | ✅ | 🖼️ | regulasi-keselamatan-kerja-indonesia.md |
+| 20 | C3.2 | APD Wajib di Tempat Kerja | ✅ | 🖼️ | apd-wajib-tempat-kerja.md |
+| 21 | C3.3 | Sertifikasi Seragam Safety SNI | ✅ | 🖼️ | sertifikasi-seragam-safety-sni.md |
+| 22 | C3.4 | Audit Keselamatan dan Seragam Kerja | ✅ | 🖼️ | audit-keselamatan-seragam-kerja.md |
+| 23 | C3.5 | Membangun Budaya Safety di Perusahaan | ✅ | 🖼️ | membangun-budaya-safety-perusahaan.md |
+| 24 | C3.6 | Insentif dan Hukuman Terkait APD | ✅ | 🖼️ | insentif-dan-sanksi-apd.md |
 
 ### Fase 5: Cluster Pillar 4
-| # | Kode | Judul | Status | File |
-|---|------|-------|--------|------|
-| 25 | C4.1 | Helm Safety: Panduan Memilih yang Tepat | ✅ | helm-safety-panduan-memilih.md |
-| 26 | C4.2 | Sepatu Safety: Jenis dan Standar | ✅ | sepatu-safety-jenis-dan-standar.md |
-| 27 | C4.3 | Sarung Tangan Kerja: Pemilihan Berdasarkan Risiko | ✅ | sarung-tangan-kerja-panduan.md |
-| 28 | C4.4 | Kacamata Safety dan Face Shield | ✅ | kacamata-safety-dan-face-shield.md |
-| 29 | C4.5 | Ear Plug dan Ear Muff: Proteksi Pendengaran | ✅ | ear-plug-dan-ear-muff.md |
-| 30 | C4.6 | Masker dan Respirator untuk Keamanan Pernapasan | ✅ | masker-dan-respirator-kerja.md |
+| # | Kode | Judul | Status | Cover | File |
+|---|------|-------|--------|-------|------|
+| 25 | C4.1 | Helm Safety: Panduan Memilih yang Tepat | ✅ | 🖼️ | helm-safety-panduan-memilih.md |
+| 26 | C4.2 | Sepatu Safety: Jenis dan Standar | ✅ | 🖼️ | sepatu-safety-jenis-dan-standar.md |
+| 27 | C4.3 | Sarung Tangan Kerja: Pemilihan Berdasarkan Risiko | ✅ | 🖼️ | sarung-tangan-kerja-panduan.md |
+| 28 | C4.4 | Kacamata Safety dan Face Shield | ✅ | 🖼️ | kacamata-safety-dan-face-shield.md |
+| 29 | C4.5 | Ear Plug dan Ear Muff: Proteksi Pendengaran | ✅ | 🖼️ | ear-plug-dan-ear-muff.md |
+| 30 | C4.6 | Masker dan Respirator untuk Keamanan Pernapasan | ✅ | 🖼️ | masker-dan-respirator-kerja.md |
 
 ### Fase 6: Artikel Vendor & Supplier (NEW)
-| # | Kode | Judul | Status | File | Target Keyword |
-|---|------|-------|--------|------|----------------|
-| 31 | V1 | Vendor Seragam Safety Terpercaya: Cara Memilih | ✅ | vendor-seragam-safety-terpercaya.md | vendor seragam safety |
-| 32 | V2 | Supplier Seragam Safety Indonesia: Panduan Lengkap | ✅ | supplier-seragam-safety-indonesia.md | supplier seragam safety |
-| 33 | V3 | Konveksi Seragam Safety: Keuntungan Order dari Pabrik | ✅ | konveksi-seragam-safety.md | konveksi seragam safety |
-| 34 | V4 | Distributor Seragam Safety: Kelebihan dan Kekurangan | ✅ | distributor-seragam-safety.md | distributor seragam safety |
-| 35 | V5 | Produsen Seragam Safety: Quality Control dan Standar | ✅ | produsen-seragam-safety.md | produsen seragam safety |
+| # | Kode | Judul | Status | Cover | File |
+|---|------|-------|--------|-------|------|
+| 31 | V1 | Vendor Seragam Safety Terpercaya: Cara Memilih | ✅ | 🖼️ | vendor-seragam-safety-terpercaya.md |
+| 32 | V2 | Supplier Seragam Safety Indonesia: Panduan Lengkap | ✅ | 🖼️ | supplier-seragam-safety-indonesia.md |
+| 33 | V3 | Konveksi Seragam Safety: Keuntungan Order dari Pabrik | ✅ | 🖼️ | konveksi-seragam-safety.md |
+| 34 | V4 | Distributor Seragam Safety: Kelebihan dan Kekurangan | ✅ | 🖼️ | distributor-seragam-safety.md |
+| 35 | V5 | Produsen Seragam Safety: Quality Control dan Standar | ✅ | 🖼️ | produsen-seragam-safety.md |
 
 ### Fase 7: Artikel Industri Spesifik (NEW)
-| # | Kode | Judul | Status | File | Target Keyword |
-|---|------|-------|--------|------|----------------|
-| 36 | I1 | Seragam Safety Tambang: Standar dan Persyaratan Khusus | ✅ | seragam-safety-tambang.md | seragam safety tambang |
-| 37 | I2 | Seragam Safety Konstruksi: Proteksi Maksimal di Lapangan | ✅ | seragam-safety-konstruksi.md | seragam safety konstruksi |
-| 38 | I3 | Seragam Safety Proyek: Panduan untuk Project Manager | ✅ | seragam-safety-proyek.md | seragam safety proyek |
-| 39 | I4 | Baju Safety Reflective: Visibilitas untuk Keselamatan | ✅ | baju-safety-reflective.md | baju safety reflective |
-| 40 | I5 | Seragam Safety Bordir Logo: Branding Profesional | ✅ | seragam-safety-bordir-logo.md | seragam safety bordir logo |
+| # | Kode | Judul | Status | Cover | File |
+|---|------|-------|--------|-------|------|
+| 36 | I1 | Seragam Safety Tambang: Standar dan Persyaratan Khusus | ✅ | 🖼️ | seragam-safety-tambang.md |
+| 37 | I2 | Seragam Safety Konstruksi: Proteksi Maksimal di Lapangan | ✅ | 🖼️ | seragam-safety-konstruksi.md |
+| 38 | I3 | Seragam Safety Proyek: Panduan untuk Project Manager | ✅ | 🖼️ | seragam-safety-proyek.md |
+| 39 | I4 | Baju Safety Reflective: Visibilitas untuk Keselamatan | ✅ | 🖼️ | baju-safety-reflective.md |
+| 40 | I5 | Seragam Safety Bordir Logo: Branding Profesional | ✅ | 🖼️ | seragam-safety-bordir-logo.md |
 
 ---
 
@@ -711,6 +720,29 @@ Hubungi Fabrik Safety sekarang untuk konsultasi gratis tentang kebutuhan pakaian
 | 2026-03-13 | Selesai Fase 6: 5 artikel Vendor & Supplier |
 | 2026-03-13 | Selesai Fase 7: 5 artikel Industri Spesifik |
 | 2026-03-13 | **🎉 SEMUA 40 ARTIKEL SELESAI!** |
+| 2026-03-13 | Tambah kolom "Cover" untuk tracking gambar AI |
+| 2026-03-13 | Selesai cover image P1: Panduan Lengkap Pakaian Safety Industri 🖼️ |
+| 2026-03-13 | Selesai cover image P2: Memilih Wearpack Terbaik untuk Perusahaan 🖼️ |
+| 2026-03-13 | Tambah tracking Cover Image (kolom baru) |
+| 2026-03-13 | Cover image P1 (Panduan Lengkap Pakaian Safety) ✅ 🖼️ |
+| 2026-03-13 | Cover image P2 (Memilih Wearpack Terbaik) ✅ 🖼️ |
+| 2026-03-13 | Tambah tracking Cover Image (🖼️) di daftar artikel |
+| 2026-03-13 | Generate cover image P1: Panduan Lengkap Pakaian Safety Industri ✅ |
+| 2026-03-13 | Generate cover image P2: Memilih Wearpack Terbaik ✅ |
+| 2026-03-13 | Generate cover image P3: Standar Keselamatan Kerja di Indonesia ✅ |
+| 2026-03-13 | Generate cover image P4: Panduan Lengkap APD dan Safety Equipment ✅ |
+| 2026-03-13 | Generate cover image C1.1: Jenis-jenis Seragam Safety dan Fungsinya ✅ |
+| 2026-03-13 | Generate cover image C1.2: Bahan Material Seragam Safety Terbaik ✅ |
+| 2026-03-13 | **Progress: 6/40 cover image selesai (15%)** |
+| 2026-03-13 | Generate cover image C1.3-C1.7 (5 artikel) ✅ |
+| 2026-03-13 | Generate cover image C2.1-C2.7 (7 artikel) ✅ |
+| 2026-03-13 | Generate cover image C3.1-C3.3 (3 artikel) ✅ |
+| 2026-03-13 | **Progress: 21/40 cover image selesai (52.5%)** |
+| 2026-03-13 | Generate cover image C3.4-C3.6 (3 artikel) ✅ |
+| 2026-03-13 | Generate cover image C4.1-C4.6 (6 artikel) ✅ |
+| 2026-03-13 | Generate cover image V1-V5 (5 artikel) ✅ |
+| 2026-03-13 | Generate cover image I1-I5 (5 artikel) ✅ |
+| 2026-03-13 | **🎉 SEMUA 40 COVER IMAGE SELESAI! (100%)** |
 
 ---
 

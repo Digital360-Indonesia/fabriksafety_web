@@ -5,7 +5,7 @@ description: "Panduan lengkap pengadaan seragam safety skala besar: tips procure
 descriptionEn: "Complete guide to large-scale safety uniform procurement: procurement tips, price negotiation, quality control, logistics, and order management for 100+ employees."
 pubDate: 2026-01-15
 author: "Fabrik Safety Team"
-image: "/images/about/team-consultation.webp"
+image: "/images/blog/pengadaan-seragam-safety-skala-besar.png"
 tags: ["pengadaan seragam safety skala besar", "seragam safety grosir", "procurement", "order besar"]
 category: "Panduan"
 featured: false

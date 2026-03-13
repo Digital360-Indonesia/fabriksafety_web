@@ -5,7 +5,7 @@ description: "Panduan lengkap perbedaan wearpack dan coverall: struktur, kelebih
 descriptionEn: "Complete guide to wearpack vs coverall differences: structure, pros, cons, and how to choose the right one for various industries and work requirements."
 pubDate: 2026-01-13
 author: "Fabrik Safety Team"
-image: "/images/about/team-consultation.webp"
+image: "/images/blog/perbedaan-wearpack-dan-coverall.png"
 tags: ["wearpack", "coverall", "perbedaan wearpack dan coverall", "pakaian safety"]
 category: "Panduan"
 featured: false

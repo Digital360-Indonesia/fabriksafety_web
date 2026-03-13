@@ -5,7 +5,7 @@ description: "Panduan lengkap audit keselamatan kerja dan seragam: jenis audit, 
 descriptionEn: "Complete guide to workplace safety audits and uniforms: audit types, preparation, complete checklist, and tips for passing audits with best results."
 pubDate: 2026-01-22
 author: "Fabrik Safety Team"
-image: "/images/about/team-consultation.webp"
+image: "/images/blog/audit-keselamatan-seragam-kerja.png"
 tags: ["audit keselamatan kerja", "audit K3", "seragam kerja audit", "checklist safety"]
 category: "Regulasi"
 featured: false

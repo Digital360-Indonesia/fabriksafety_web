@@ -5,7 +5,7 @@ description: "Panduan lengkap tentang seragam safety konstruksi yang wajib di pr
 descriptionEn: "Complete guide to construction safety uniforms required on sites. PPE standards, important features, and tips for choosing workwear for the construction industry."
 pubDate: 2026-02-06
 author: "Fabrik Safety Team"
-image: "/images/about/team-consultation.webp"
+image: "/images/blog/seragam-safety-konstruksi.webp"
 tags: ["seragam safety konstruksi", "pakaian safety proyek", "wearpack konstruksi"]
 category: "Industri Spesifik"
 featured: false

@@ -5,7 +5,7 @@ description: "Panduan lengkap APD wajib di tempat kerja berdasarkan jenis indust
 descriptionEn: "Complete guide to mandatory PPE in the workplace by industry type: construction, manufacturing, mining, oil & gas, and effective implementation tips."
 pubDate: 2026-01-20
 author: "Fabrik Safety Team"
-image: "/images/about/team-consultation.webp"
+image: "/images/blog/apd-wajib-tempat-kerja.png"
 tags: ["APD wajib", "alat pelindung diri", "PPE", "keselamatan kerja"]
 category: "Regulasi"
 featured: false

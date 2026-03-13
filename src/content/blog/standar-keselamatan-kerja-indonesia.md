@@ -5,7 +5,7 @@ description: "Panduan lengkap standar keselamatan kerja Indonesia: regulasi UU, 
 descriptionEn: "Complete guide to Indonesian workplace safety standards: regulations, SNI standards, mandatory PPE, certification, and building safety culture."
 pubDate: 2026-01-03
 author: "Fabrik Safety Team"
-image: "/images/about/team-consultation.webp"
+image: "/images/blog/standar-keselamatan-kerja-indonesia.png"
 tags: ["keselamatan kerja", "regulasi", "SNI", "APD", "K3"]
 category: "Regulasi"
 featured: false

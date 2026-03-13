@@ -5,7 +5,7 @@ description: "Panduan komprehensif tentang Alat Pelindung Diri (APD): helm safet
 descriptionEn: "Comprehensive guide to Personal Protective Equipment (PPE): safety helmets, safety boots, gloves, goggles, ear plugs, and respirators for workplace safety."
 pubDate: 2026-01-04
 author: "Fabrik Safety Team"
-image: "/images/about/team-consultation.webp"
+image: "/images/blog/panduan-lengkap-apd-safety-equipment.png"
 tags: ["APD", "safety equipment", "helm safety", "sepatu safety", "K3"]
 category: "Panduan"
 featured: false

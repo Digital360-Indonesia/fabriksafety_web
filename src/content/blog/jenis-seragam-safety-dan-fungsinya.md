@@ -5,7 +5,7 @@ description: "Panduan lengkap tentang berbagai jenis seragam safety: wearpack, c
 descriptionEn: "Complete guide to various types of safety uniforms: wearpack, coverall, jumpsuit, safety vest, and their respective functions for workplace safety."
 pubDate: 2026-01-05
 author: "Fabrik Safety Team"
-image: "/images/about/team-consultation.webp"
+image: "/images/blog/jenis-seragam-safety-dan-fungsinya.png"
 tags: ["seragam safety", "wearpack", "coverall", "APD"]
 category: "Panduan"
 featured: false

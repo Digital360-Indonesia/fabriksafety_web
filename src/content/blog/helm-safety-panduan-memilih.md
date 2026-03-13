@@ -5,7 +5,7 @@ description: "Panduan lengkap helm safety: jenis-jenis helm, standar SNI, cara m
 descriptionEn: "Complete guide to safety helmets: types, SNI standards, how to choose the right one, proper sizing, maintenance, and when to replace for maximum protection."
 pubDate: 2026-01-25
 author: "Fabrik Safety Team"
-image: "/images/about/team-consultation.webp"
+image: "/images/blog/helm-safety-panduan-memilih.png"
 tags: ["helm safety", "safety helmet", "helm proyek", "APD kepala"]
 category: "APD"
 featured: false

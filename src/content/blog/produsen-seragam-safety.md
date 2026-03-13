@@ -5,7 +5,7 @@ description: "Pelajari tentang standar produksi dan quality control dari produse
 descriptionEn: "Learn about production standards and quality control from safety uniform manufacturers. Guide to choosing PPE factories with guaranteed quality and complete certifications."
 pubDate: 2026-02-04
 author: "Fabrik Safety Team"
-image: "/images/about/team-consultation.webp"
+image: "/images/blog/produsen-seragam-safety.webp"
 tags: ["produsen seragam safety", "pabrik seragam safety", "quality control apd"]
 category: "Vendor & Supplier"
 featured: false

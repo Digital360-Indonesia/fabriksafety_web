@@ -5,7 +5,7 @@ description: "Panduan lengkap memilih supplier seragam safety Indonesia terperca
 descriptionEn: "Complete guide to choosing a trusted safety uniform supplier in Indonesia. Tips on evaluating quality, price, and service for your company's PPE procurement."
 pubDate: 2026-02-01
 author: "Fabrik Safety Team"
-image: "/images/about/team-consultation.webp"
+image: "/images/blog/supplier-seragam-safety-indonesia.webp"
 tags: ["supplier seragam safety", "seragam safety indonesia", "pengadaan apd"]
 category: "Vendor & Supplier"
 featured: false

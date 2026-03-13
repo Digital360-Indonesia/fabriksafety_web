@@ -5,7 +5,7 @@ description: "Panduan lengkap warna seragam safety: makna warna, standar industr
 descriptionEn: "Complete guide to safety uniform colors: color meanings, industry standards, safety color codes, and how to choose the right uniform color for various industries."
 pubDate: 2026-01-10
 author: "Fabrik Safety Team"
-image: "/images/about/team-consultation.webp"
+image: "/images/blog/warna-seragam-safety-dan-maknanya.png"
 tags: ["warna seragam", "kode warna safety", "seragam safety"]
 category: "Panduan"
 featured: false

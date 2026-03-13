@@ -5,7 +5,7 @@ description: "Panduan lengkap wearpack waterproof: teknologi waterproofing, rati
 descriptionEn: "Complete guide to waterproof wearpack: waterproofing technology, water resistance ratings, wet industry applications, and how to choose effective work rainwear."
 pubDate: 2026-01-18
 author: "Fabrik Safety Team"
-image: "/images/about/team-consultation.webp"
+image: "/images/blog/wearpack-waterproof-industri.png"
 tags: ["wearpack waterproof", "pakaian hujan kerja", "seragam tahan air", "outdoor workwear"]
 category: "Panduan"
 featured: false

@@ -22,7 +22,12 @@ const relatedPortfolios = portfolios
   .slice(0, 3);
 ---
 
-<BaseLayout title={`${portfolio.productName} - Fabrik Safety Portfolio`}>
+<BaseLayout
+  title={`${portfolio.productName} - Fabrik Safety Portfolio`}
+  description={portfolio.description}
+  image={portfolio.mainImage}
+  type="article"
+>
   <!-- Breadcrumb -->
   <section class="bg-gray-100 py-4">
     <div class="container-custom">

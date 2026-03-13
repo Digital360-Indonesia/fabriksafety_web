@@ -5,7 +5,7 @@ description: "Temukan keuntungan order seragam safety dari konveksi langsung. Ha
 descriptionEn: "Discover the benefits of ordering safety uniforms directly from manufacturers. Factory prices, custom design, guaranteed quality, and professional service for your company's PPE needs."
 pubDate: 2026-02-02
 author: "Fabrik Safety Team"
-image: "/images/about/team-consultation.webp"
+image: "/images/blog/konveksi-seragam-safety.webp"
 tags: ["konveksi seragam safety", "pabrik seragam safety", "seragam safety custom"]
 category: "Vendor & Supplier"
 featured: false

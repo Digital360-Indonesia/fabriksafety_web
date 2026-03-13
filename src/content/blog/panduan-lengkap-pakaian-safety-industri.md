@@ -5,7 +5,7 @@ description: "Panduan komprehensif tentang pakaian safety industri: jenis-jenis,
 descriptionEn: "Comprehensive guide to industrial safety wear: types, functions, materials, how to choose, and maintenance tips for longevity."
 pubDate: 2026-01-01
 author: "Fabrik Safety Team"
-image: "/images/about/team-consultation.webp"
+image: "/images/blog/panduan-lengkap-pakaian-safety-industri.png"
 tags: ["safety", "pakaian safety", "APD", "wearpack"]
 category: "Panduan"
 featured: true

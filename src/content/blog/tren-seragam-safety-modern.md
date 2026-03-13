@@ -5,7 +5,7 @@ description: "Panduan lengkap tren seragam safety modern 2024-2025: smart fabric
 descriptionEn: "Complete guide to modern safety uniform trends 2024-2025: smart fabrics, wearable technology, ergonomic design, and latest innovations for workplace safety."
 pubDate: 2026-01-11
 author: "Fabrik Safety Team"
-image: "/images/about/team-consultation.webp"
+image: "/images/blog/tren-seragam-safety-modern.png"
 tags: ["tren seragam safety", "safety fashion", "seragam modern", "inovasi safety"]
 category: "Panduan"
 featured: false

@@ -5,7 +5,7 @@ description: "Panduan lengkap sistem insentif dan sanksi untuk penegakan kepatuh
 descriptionEn: "Complete guide to incentive and sanction systems for PPE compliance: reward strategies, sanction types, fair implementation, and best practices for positive safety culture."
 pubDate: 2026-01-24
 author: "Fabrik Safety Team"
-image: "/images/about/team-consultation.webp"
+image: "/images/blog/insentif-dan-sanksi-apd.png"
 tags: ["insentif APD", "sanksi safety", "kepatuhan APD", "sistem reward safety"]
 category: "Regulasi"
 featured: false

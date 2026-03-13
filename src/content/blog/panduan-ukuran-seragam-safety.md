@@ -5,7 +5,7 @@ description: "Panduan lengkap cara mengukur seragam safety: size chart, panduan 
 descriptionEn: "Complete guide to measuring safety uniforms: size chart, wearpack and coverall sizing guide, tips for choosing the right size for comfort and safety."
 pubDate: 2026-01-09
 author: "Fabrik Safety Team"
-image: "/images/about/team-consultation.webp"
+image: "/images/blog/panduan-ukuran-seragam-safety.png"
 tags: ["ukuran seragam", "size chart safety", "panduan ukuran"]
 category: "Panduan"
 featured: false

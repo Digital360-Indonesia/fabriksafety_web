@@ -5,7 +5,7 @@ description: "Analisis lengkap pengadaan seragam safety: ROI, cost-benefit analy
 descriptionEn: "Complete analysis of safety uniform procurement: ROI, cost-benefit analysis, cost-saving tips, and how to make safety uniforms a profitable company investment."
 pubDate: 2026-01-08
 author: "Fabrik Safety Team"
-image: "/images/about/team-consultation.webp"
+image: "/images/blog/pengadaan-seragam-safety-investasi.png"
 tags: ["pengadaan seragam safety", "investasi safety", "procurement"]
 category: "Panduan"
 featured: false

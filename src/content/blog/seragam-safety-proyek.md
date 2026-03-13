@@ -5,7 +5,7 @@ description: "Panduan praktis untuk Project Manager dalam pengadaan seragam safe
 descriptionEn: "Practical guide for Project Managers in procuring project safety uniforms. From budget planning to implementation and OHS compliance."
 pubDate: 2026-02-07
 author: "Fabrik Safety Team"
-image: "/images/about/team-consultation.webp"
+image: "/images/blog/seragam-safety-proyek.webp"
 tags: ["seragam safety proyek", "pengadaan apd proyek", "project manager safety"]
 category: "Industri Spesifik"
 featured: false

@@ -5,7 +5,7 @@ description: "Panduan lengkap wearpack anti api dan tahan panas: material FR, st
 descriptionEn: "Complete guide to flame resistant and heat resistant wearpack: FR materials, certification standards, industry applications, and how to choose the right FR clothing for safety."
 pubDate: 2026-01-17
 author: "Fabrik Safety Team"
-image: "/images/about/team-consultation.webp"
+image: "/images/blog/wearpack-anti-api-tahan-panas.png"
 tags: ["wearpack anti api", "wearpack tahan panas", "FR clothing", "flame resistant"]
 category: "Panduan"
 featured: false

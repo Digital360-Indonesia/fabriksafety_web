@@ -27,7 +27,12 @@ const relatedPosts = allPosts
   .slice(0, 2);
 ---
 
-<BaseLayout title={`${post.data.title} - Fabrik Safety Blog`}>
+<BaseLayout
+  title={`${post.data.title} - Fabrik Safety Blog`}
+  description={post.data.description}
+  image={post.data.image}
+  type="article"
+>
   <main>
     <!-- Hero Section -->
     <section class="bg-gradient-to-r from-primary-700 to-primary-900 text-white py-16 md:py-20">

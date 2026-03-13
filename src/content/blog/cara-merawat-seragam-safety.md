@@ -5,7 +5,7 @@ description: "Panduan lengkap cara merawat seragam safety: tips mencuci, menyimp
 descriptionEn: "Complete guide to maintaining safety uniforms: washing, storing, and caring tips for various types of safety uniform materials to ensure longevity and effectiveness."
 pubDate: 2026-01-07
 author: "Fabrik Safety Team"
-image: "/images/about/team-consultation.webp"
+image: "/images/blog/cara-merawat-seragam-safety.png"
 tags: ["perawatan seragam", "cuci seragam safety", "tips safety"]
 category: "Panduan"
 featured: false

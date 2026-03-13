@@ -5,7 +5,7 @@ description: "Panduan lengkap memilih masker dan respirator untuk perlindungan p
 descriptionEn: "Complete guide to choosing masks and respirators for respiratory protection in the workplace. Learn about NIOSH standards, types, and proper usage."
 pubDate: 2026-01-30
 author: "Fabrik Safety Team"
-image: "/images/about/team-consultation.webp"
+image: "/images/blog/masker-dan-respirator-kerja.png"
 tags: ["safety", "masker", "respirator", "APD", "alat pelindung diri"]
 category: "Alat Pelindung Diri"
 featured: false

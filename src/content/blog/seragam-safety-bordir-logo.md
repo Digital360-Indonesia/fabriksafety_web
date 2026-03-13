@@ -5,7 +5,7 @@ description: "Panduan lengkap tentang seragam safety bordir logo untuk branding 
 descriptionEn: "Complete guide to embroidered logo safety uniforms for company branding. Design tips, embroidery techniques, and how to choose vendors for professional results."
 pubDate: 2026-02-09
 author: "Fabrik Safety Team"
-image: "/images/about/team-consultation.webp"
+image: "/images/blog/seragam-safety-bordir-logo.webp"
 tags: ["seragam safety bordir logo", "seragam safety custom", "branding perusahaan"]
 category: "Industri Spesifik"
 featured: false

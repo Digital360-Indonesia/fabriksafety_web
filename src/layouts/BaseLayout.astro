@@ -8,12 +8,19 @@ import '../styles/global.css';
 interface Props {
   title: string;
   description?: string;
+  image?: string;
+  type?: 'website' | 'article';
 }
 
 const {
   title,
-  description = 'Fabrik Safety - Spesialis Pengadaan Seragam Safety dan Wearpack Berkualitas untuk Perusahaan di Indonesia'
+  description = 'Fabrik Safety - Spesialis Pengadaan Seragam Safety dan Wearpack Berkualitas untuk Perusahaan di Indonesia',
+  image = '/images/og-image.webp',
+  type = 'website'
 } = Astro.props;
+
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+const fullImageUrl = new URL(image, Astro.site);
 ---
 
 <!DOCTYPE html>
@@ -25,9 +32,26 @@ const {
     <link rel="icon" type="image/png" href="/favicon.png" />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
+    <link rel="canonical" href={canonicalURL} />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content={type} />
+    <meta property="og:url" content={canonicalURL} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={fullImageUrl} />
+    <meta property="og:locale" content="id_ID" />
+    <meta property="og:site_name" content="Fabrik Safety" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content={canonicalURL} />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={fullImageUrl} />
   </head>
   <body class="font-sans antialiased">
     <Header />

@@ -5,7 +5,7 @@ description: "Panduan lengkap tentang baju safety reflective. Standar high visib
 descriptionEn: "Complete guide to reflective safety clothing. High visibility standards, reflective tape types, and tips for choosing safe clothing for high-risk work."
 pubDate: 2026-02-08
 author: "Fabrik Safety Team"
-image: "/images/about/team-consultation.webp"
+image: "/images/blog/baju-safety-reflective.webp"
 tags: ["baju safety reflective", "high visibility clothing", "pakaian safety reflective"]
 category: "Industri Spesifik"
 featured: false

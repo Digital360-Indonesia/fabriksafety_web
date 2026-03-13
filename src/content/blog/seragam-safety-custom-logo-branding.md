@@ -5,7 +5,7 @@ description: "Panduan lengkap seragam safety custom logo: teknik bordir, sablon,
 descriptionEn: "Complete guide to custom logo safety uniforms: embroidery techniques, printing, design tips, and how to make safety uniforms an effective company branding tool."
 pubDate: 2026-01-12
 author: "Fabrik Safety Team"
-image: "/images/about/team-consultation.webp"
+image: "/images/blog/seragam-safety-custom-logo-branding.png"
 tags: ["seragam safety custom", "seragam safety bordir logo", "branding perusahaan", "wearpack custom"]
 category: "Panduan"
 featured: false

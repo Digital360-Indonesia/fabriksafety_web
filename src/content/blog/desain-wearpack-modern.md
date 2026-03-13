@@ -5,7 +5,7 @@ description: "Panduan lengkap desain wearpack modern: tren fashion safety, ergon
 descriptionEn: "Complete guide to modern wearpack design: safety fashion trends, ergonomics, functional features, and how to create stylish yet safe safety uniforms."
 pubDate: 2026-01-16
 author: "Fabrik Safety Team"
-image: "/images/about/team-consultation.webp"
+image: "/images/blog/desain-wearpack-modern.png"
 tags: ["desain wearpack modern", "safety fashion", "wearpack stylish", "seragam modern"]
 category: "Panduan"
 featured: false

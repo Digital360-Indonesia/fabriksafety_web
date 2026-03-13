@@ -5,7 +5,7 @@ description: "Panduan lengkap regulasi keselamatan kerja di Indonesia: UU No 1 T
 descriptionEn: "Complete guide to Indonesian workplace safety regulations: Law No 1 of 1970, Minister Regulations, SNI standards, and implications for companies and workers."
 pubDate: 2026-01-19
 author: "Fabrik Safety Team"
-image: "/images/about/team-consultation.webp"
+image: "/images/blog/regulasi-keselamatan-kerja-indonesia.png"
 tags: ["regulasi keselamatan kerja", "UU keselamatan kerja", "standar safety", "K3"]
 category: "Regulasi"
 featured: false

@@ -5,7 +5,7 @@ description: "Panduan lengkap membangun budaya keselamatan di perusahaan: komitm
 descriptionEn: "Complete guide to building workplace safety culture: leadership commitment, employee engagement, implementation steps, and measuring success for sustainable safety culture."
 pubDate: 2026-01-23
 author: "Fabrik Safety Team"
-image: "/images/about/team-consultation.webp"
+image: "/images/blog/membangun-budaya-safety-perusahaan.png"
 tags: ["budaya safety", "safety culture", "keselamatan kerja", "K3"]
 category: "Regulasi"
 featured: false

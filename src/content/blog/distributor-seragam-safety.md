@@ -5,7 +5,7 @@ description: "Pahami kelebihan dan kekurangan membeli dari distributor seragam s
 descriptionEn: "Understand the pros and cons of buying from safety uniform distributors. Complete guide to help you choose the right PPE procurement source."
 pubDate: 2026-02-03
 author: "Fabrik Safety Team"
-image: "/images/about/team-consultation.webp"
+image: "/images/blog/distributor-seragam-safety.webp"
 tags: ["distributor seragam safety", "supplier apd", "pengadaan seragam safety"]
 category: "Vendor & Supplier"
 featured: false

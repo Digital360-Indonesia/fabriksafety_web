@@ -5,7 +5,7 @@ description: "Panduan lengkap memilih ear plug dan ear muff untuk proteksi pende
 descriptionEn: "Complete guide to choosing ear plugs and ear muffs for hearing protection in the workplace. Learn about NRR standards, types, and proper usage."
 pubDate: 2026-01-29
 author: "Fabrik Safety Team"
-image: "/images/about/team-consultation.webp"
+image: "/images/blog/ear-plug-dan-ear-muff.png"
 tags: ["safety", "ear plug", "ear muff", "APD", "alat pelindung diri"]
 category: "Alat Pelindung Diri"
 featured: false

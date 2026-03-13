@@ -5,7 +5,7 @@ description: "Panduan lengkap memilih kacamata safety dan face shield yang tepat
 descriptionEn: "Complete guide to choosing the right safety glasses and face shields to protect eyes in the workplace. Learn about standards, types, and proper usage tips."
 pubDate: 2026-01-28
 author: "Fabrik Safety Team"
-image: "/images/about/team-consultation.webp"
+image: "/images/blog/kacamata-safety-dan-face-shield.png"
 tags: ["safety", "kacamata safety", "APD", "alat pelindung diri"]
 category: "Alat Pelindung Diri"
 featured: false

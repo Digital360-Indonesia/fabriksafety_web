@@ -5,7 +5,7 @@ description: "Panduan lengkap memilih vendor seragam safety terpercaya untuk per
 descriptionEn: "Complete guide to choosing a trusted safety uniform vendor for your company. Learn criteria, key questions, and tips for finding the best supplier."
 pubDate: 2026-01-31
 author: "Fabrik Safety Team"
-image: "/images/about/team-consultation.webp"
+image: "/images/blog/vendor-seragam-safety-terpercaya.webp"
 tags: ["safety", "vendor", "supplier", "seragam safety", "procurement"]
 category: "Pengadaan Safety"
 featured: false
