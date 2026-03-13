@@ -12,8 +12,27 @@ blogPosts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 // Featured posts
 const featuredPosts = blogPosts.filter(post => post.data.featured);
 
+// Posts per page for load more
+const postsPerPage = 9;
+const totalPosts = blogPosts.length;
+
 // Default image fallback
 const defaultImage = "/images/about/team-consultation.webp";
+
+// Prepare posts data for client-side
+const postsData = blogPosts.map(post => ({
+  slug: post.slug,
+  title: post.data.title,
+  titleEn: post.data.titleEn,
+  description: post.data.description,
+  descriptionEn: post.data.descriptionEn,
+  image: post.data.image,
+  category: post.data.category,
+  author: post.data.author,
+  pubDate: post.data.pubDate.toISOString(),
+  pubDateFormatted: post.data.pubDate.toLocaleDateString('id-ID', { day: 'numeric', month: 'short', year: 'numeric' }),
+  pubDateFull: post.data.pubDate.toLocaleDateString('id-ID', { year: 'numeric', month: 'long', day: 'numeric' })
+}));
 ---
 
 <BaseLayout title="Blog - Fabrik Safety">
@@ -98,90 +117,29 @@ const defaultImage = "/images/about/team-consultation.webp";
         data-en="All Articles"
       >Semua Artikel</h2>
 
-      <!-- Mobile: Vertical Stack -->
-      <div class="md:hidden space-y-6">
-        {blogPosts.map((post) => (
-          <a
-            href={`/blog/${post.slug}`}
-            class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300"
-          >
-            <div class="relative aspect-video overflow-hidden">
-              <img
-                src={post.data.image}
-                alt={post.data.title}
-                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                loading="lazy"
-              />
-            </div>
-            <div class="p-5">
-              <span class="inline-block bg-primary-100 text-primary-700 text-xs font-semibold px-3 py-1 rounded-full mb-3">
-                {post.data.category}
-              </span>
-              <h3 class="font-bold text-lg text-gray-900 mb-2 group-hover:text-primary-600 transition-colors"
-                data-id={post.data.title}
-                data-en={post.data.titleEn}
-              >
-                {post.data.title}
-              </h3>
-              <p class="text-sm text-gray-600 mb-3 line-clamp-2"
-                data-id={post.data.description}
-                data-en={post.data.descriptionEn}
-              >
-                {post.data.description}
-              </p>
-              <div class="flex items-center gap-2 text-xs text-gray-500 pt-3 border-t border-gray-100">
-                <span>{post.data.author}</span>
-                <span>•</span>
-                <time datetime={post.data.pubDate.toISOString()}>
-                  {post.data.pubDate.toLocaleDateString('id-ID', { day: 'numeric', month: 'short', year: 'numeric' })}
-                </time>
-              </div>
-            </div>
-          </a>
-        ))}
+      <!-- Blog Grid Container -->
+      <div id="blog-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {/* Initial posts will be rendered here by JS */}
       </div>
 
-      <!-- Desktop: Grid -->
-      <div class="hidden md:grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {blogPosts.map((post) => (
-          <a
-            href={`/blog/${post.slug}`}
-            class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300"
-          >
-            <div class="relative aspect-video overflow-hidden">
-              <img
-                src={post.data.image}
-                alt={post.data.title}
-                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                loading="lazy"
-              />
-            </div>
-            <div class="p-5">
-              <span class="inline-block bg-primary-100 text-primary-700 text-xs font-semibold px-3 py-1 rounded-full mb-3">
-                {post.data.category}
-              </span>
-              <h3 class="font-bold text-lg text-gray-900 mb-2 group-hover:text-primary-600 transition-colors"
-                data-id={post.data.title}
-                data-en={post.data.titleEn}
-              >
-                {post.data.title}
-              </h3>
-              <p class="text-sm text-gray-600 mb-3 line-clamp-2"
-                data-id={post.data.description}
-                data-en={post.data.descriptionEn}
-              >
-                {post.data.description}
-              </p>
-              <div class="flex items-center gap-2 text-xs text-gray-500 pt-3 border-t border-gray-100">
-                <span>{post.data.author}</span>
-                <span>•</span>
-                <time datetime={post.data.pubDate.toISOString()}>
-                  {post.data.pubDate.toLocaleDateString('id-ID', { day: 'numeric', month: 'short', year: 'numeric' })}
-                </time>
-              </div>
-            </div>
-          </a>
-        ))}
+      <!-- Load More Button -->
+      <div id="load-more-container" class="text-center mt-10">
+        <button
+          id="load-more-btn"
+          class="bg-primary-600 text-white font-semibold py-3 px-8 rounded-lg hover:bg-primary-700 transition-all duration-300 inline-flex items-center gap-2"
+        >
+          <span data-id="Muat Lebih Banyak" data-en="Load More">Muat Lebih Banyak</span>
+          <svg class="w-5 h-5 animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+          </svg>
+        </button>
+        <p id="post-counter" class="text-sm text-gray-500 mt-3"></p>
+      </div>
+
+      <!-- Loading Spinner -->
+      <div id="loading-spinner" class="hidden text-center py-8">
+        <div class="inline-block animate-spin rounded-full h-10 w-10 border-4 border-primary-600 border-t-transparent"></div>
+        <p class="text-gray-500 mt-2" data-id="Memuat..." data-en="Loading...">Memuat...</p>
       </div>
     </div>
   </section>
@@ -205,3 +163,155 @@ const defaultImage = "/images/about/team-consultation.webp";
     </div>
   </section>
 </BaseLayout>
+
+<script define:vars={{postsData, postsPerPage, totalPosts}}>
+  // Posts data passed from server
+  const allPosts = postsData;
+  const perPage = postsPerPage;
+  const total = totalPosts;
+  let currentPage = 0;
+
+  // DOM Elements
+  const container = document.getElementById('blog-container');
+  const loadMoreBtn = document.getElementById('load-more-btn');
+  const loadMoreContainer = document.getElementById('load-more-container');
+  const loadingSpinner = document.getElementById('loading-spinner');
+  const postCounter = document.getElementById('post-counter');
+
+  // Get current language
+  function getCurrentLang() {
+    return localStorage.getItem('preferredLang') || 'id';
+  }
+
+  // Create post card HTML
+  function createPostCard(post, isMobile = false) {
+    const lang = getCurrentLang();
+    const title = lang === 'en' && post.titleEn ? post.titleEn : post.title;
+    const description = lang === 'en' && post.descriptionEn ? post.descriptionEn : post.description;
+
+    if (isMobile) {
+      return `
+        <a href="/blog/${post.slug}" class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300">
+          <div class="relative aspect-video overflow-hidden">
+            <img src="${post.image}" alt="${title}" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" loading="lazy" />
+          </div>
+          <div class="p-5">
+            <span class="inline-block bg-primary-100 text-primary-700 text-xs font-semibold px-3 py-1 rounded-full mb-3">
+              ${post.category}
+            </span>
+            <h3 class="font-bold text-lg text-gray-900 mb-2 group-hover:text-primary-600 transition-colors" data-id="${post.title}" data-en="${post.titleEn}">
+              ${title}
+            </h3>
+            <p class="text-sm text-gray-600 mb-3 line-clamp-2" data-id="${post.description}" data-en="${post.descriptionEn}">
+              ${description}
+            </p>
+            <div class="flex items-center gap-2 text-xs text-gray-500 pt-3 border-t border-gray-100">
+              <span>${post.author}</span>
+              <span>•</span>
+              <time datetime="${post.pubDate}">${post.pubDateFormatted}</time>
+            </div>
+          </div>
+        </a>
+      `;
+    }
+
+    return `
+      <a href="/blog/${post.slug}" class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300">
+        <div class="relative aspect-video overflow-hidden">
+          <img src="${post.image}" alt="${title}" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" loading="lazy" />
+        </div>
+        <div class="p-5">
+          <span class="inline-block bg-primary-100 text-primary-700 text-xs font-semibold px-3 py-1 rounded-full mb-3">
+            ${post.category}
+          </span>
+          <h3 class="font-bold text-lg text-gray-900 mb-2 group-hover:text-primary-600 transition-colors" data-id="${post.title}" data-en="${post.titleEn}">
+            ${title}
+          </h3>
+          <p class="text-sm text-gray-600 mb-3 line-clamp-2" data-id="${post.description}" data-en="${post.descriptionEn}">
+            ${description}
+          </p>
+          <div class="flex items-center gap-2 text-xs text-gray-500 pt-3 border-t border-gray-100">
+            <span>${post.author}</span>
+            <span>•</span>
+            <time datetime="${post.pubDate}">${post.pubDateFormatted}</time>
+          </div>
+        </div>
+      </a>
+    `;
+  }
+
+  // Load posts
+  function loadPosts() {
+    const start = currentPage * perPage;
+    const end = start + perPage;
+    const postsToLoad = allPosts.slice(start, end);
+    const isMobile = window.innerWidth < 768;
+
+    // Show loading
+    loadingSpinner.classList.remove('hidden');
+    loadMoreBtn.classList.add('hidden');
+
+    // Simulate slight delay for smooth UX
+    setTimeout(() => {
+      postsToLoad.forEach(post => {
+        container.innerHTML += createPostCard(post, isMobile);
+      });
+
+      currentPage++;
+      updateCounter();
+
+      // Hide loading, show button if more posts
+      loadingSpinner.classList.add('hidden');
+
+      if (currentPage * perPage >= total) {
+        loadMoreContainer.innerHTML = `
+          <p class="text-gray-500" data-id="Semua artikel telah ditampilkan" data-en="All articles have been displayed">
+            Semua artikel telah ditampilkan
+          </p>
+        `;
+      } else {
+        loadMoreBtn.classList.remove('hidden');
+      }
+    }, 300);
+  }
+
+  // Update counter
+  function updateCounter() {
+    const shown = Math.min(currentPage * perPage, total);
+    postCounter.textContent = `Menampilkan ${shown} dari ${total} artikel`;
+  }
+
+  // Check if mobile view
+  function handleResize() {
+    // Reload all posts with correct mobile/desktop layout
+    const isMobile = window.innerWidth < 768;
+    const currentPosts = currentPage * perPage;
+    container.innerHTML = '';
+
+    allPosts.slice(0, currentPosts).forEach(post => {
+      container.innerHTML += createPostCard(post, isMobile);
+    });
+  }
+
+  // Event listeners
+  loadMoreBtn.addEventListener('click', loadPosts);
+
+  // Handle resize with debounce
+  let resizeTimer;
+  window.addEventListener('resize', () => {
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(handleResize, 250);
+  });
+
+  // Initial load
+  loadPosts();
+
+  // Event delegation for dynamically added post cards
+  container.addEventListener('click', (e) => {
+    const card = e.target.closest('a[href^="/blog/"]');
+    if (card) {
+      // Let the default anchor behavior work
+      // This ensures the link works properly
+    }
+  });
+</script>

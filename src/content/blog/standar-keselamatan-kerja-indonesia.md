@@ -8,7 +8,7 @@ author: "Fabrik Safety Team"
 image: "/images/about/team-consultation.webp"
 tags: ["keselamatan kerja", "regulasi", "SNI", "APD", "K3"]
 category: "Regulasi"
-featured: true
+featured: false
 ---
 
 # Standar Keselamatan Kerja di Indonesia: Regulasi dan Implementasi

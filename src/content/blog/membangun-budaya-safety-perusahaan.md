@@ -1,8 +1,6 @@
 ---
 title: "Membangun Budaya Safety di Perusahaan: Dari Atasan hingga Karyawan"
 titleEn: "Building Safety Culture in the Company: From Management to Employees"
-titleEn: "Complete guide to building workplace safety culture: leadership commitment, employee engagement, implementation steps, and measuring success for sustainable safety culture."
-titleEn: "Complete guide to building workplace safety culture: leadership commitment, employee engagement, implementation steps, and measuring success for sustainable safety culture."
 description: "Panduan lengkap membangun budaya keselamatan di perusahaan: komitmen leadership, keterlibatan karyawan, langkah implementasi, dan mengukur keberhasilan."
 descriptionEn: "Complete guide to building workplace safety culture: leadership commitment, employee engagement, implementation steps, and measuring success for sustainable safety culture."
 pubDate: 2026-01-23

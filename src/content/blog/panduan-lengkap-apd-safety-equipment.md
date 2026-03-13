@@ -8,7 +8,7 @@ author: "Fabrik Safety Team"
 image: "/images/about/team-consultation.webp"
 tags: ["APD", "safety equipment", "helm safety", "sepatu safety", "K3"]
 category: "Panduan"
-featured: true
+featured: false
 ---
 
 # Panduan Lengkap APD dan Safety Equipment: Dari Helm hingga Sepatu
