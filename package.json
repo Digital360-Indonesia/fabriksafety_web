@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/Digital360-Indonesia/fabriksafety_web#readme",
   "dependencies": {
+    "@astrojs/sitemap": "^3.7.1",
     "@astrojs/tailwind": "^6.0.2",
     "astro": "^5.17.1",
     "tailwindcss": "^3.4.19"
