@@ -7,6 +7,8 @@ export default defineConfig({
   site: 'https://fabriksafety.com',
   integrations: [
     tailwind(),
-    sitemap(),
+    sitemap({
+      xslURL: '/sitemap.xsl',
+    }),
   ],
 });
