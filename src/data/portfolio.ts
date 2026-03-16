@@ -1,4 +1,17 @@
 // Portfolio Data Structure
+export interface PortfolioFeature {
+  name: string;
+  nameEn: string;
+  description: string;
+  descriptionEn: string;
+}
+
+export interface PortfolioSpec {
+  label: string;
+  labelEn: string;
+  value: string;
+}
+
 export interface Portfolio {
   id: string;
   slug: string;
@@ -14,6 +27,8 @@ export interface Portfolio {
   mainImage: string;
   year: string;
   tags: string[];
+  features?: PortfolioFeature[];
+  specs?: PortfolioSpec[];
 }
 
 export const portfolios: Portfolio[] = [
@@ -26,14 +41,51 @@ export const portfolios: Portfolio[] = [
     categoryEn: 'Safety Vest',
     clientName: 'PT Pertamina',
     clientLogo: '/images/clients/12.png',
-    description: 'Rompi safety premium dengan material reflective berkualitas tinggi untuk karyawan PT Pertamina.',
-    descriptionEn: 'Premium safety vest with high quality reflective material for PT Pertamina employees.',
+    description: 'Rompi safety premium dengan material reflective berkualitas tinggi untuk karyawan PT Pertamina. Dirancang untuk memberikan visibilitas maksimal di area kerja dengan pencahayaan rendah.',
+    descriptionEn: 'Premium safety vest with high quality reflective material for PT Pertamina employees. Designed to provide maximum visibility in low-light work areas.',
     images: [
       '/images/portfolio/rompi-pertamina.webp',
+      '/images/portfolio/rompi-pupr.webp',
+      '/images/portfolio/jaket-freeport.webp',
+      '/images/portfolio/coverall-pln.webp',
     ],
     mainImage: '/images/portfolio/rompi-pertamina.webp',
     year: '2024',
-    tags: ['rompi', 'safety', 'reflective', 'oil & gas']
+    tags: ['rompi', 'safety', 'reflective', 'oil & gas'],
+    features: [
+      {
+        name: 'Material Reflective Premium',
+        nameEn: 'Premium Reflective Material',
+        description: 'Menggunakan kain reflective grade 1 dengan daya pantul cahaya tinggi untuk visibilitas maksimal.',
+        descriptionEn: 'Uses grade 1 reflective fabric with high light reflection for maximum visibility.'
+      },
+      {
+        name: 'Desain Ergonomis',
+        nameEn: 'Ergonomic Design',
+        description: 'Potongan yang nyaman dan tidak menghambat gerakan saat bekerja.',
+        descriptionEn: 'Comfortable cut that does not restrict movement while working.'
+      },
+      {
+        name: 'Resleting Berkualitas',
+        nameEn: 'Quality Zipper',
+        description: 'Resleting YKK anti karat untuk ketahanan jangka panjang.',
+        descriptionEn: 'YKK rust-resistant zipper for long-term durability.'
+      },
+      {
+        name: 'Kantong Multi-fungsi',
+        nameEn: 'Multi-function Pockets',
+        description: 'Dilengkapi kantong depan untuk menyimpan peralatan kecil.',
+        descriptionEn: 'Equipped with front pockets for storing small equipment.'
+      }
+    ],
+    specs: [
+      { label: 'Bahan Utama', labelEn: 'Main Material', value: 'Polyester 100% + Reflective Tape' },
+      { label: 'Berat', labelEn: 'Weight', value: '± 250 gram' },
+      { label: 'Warna', labelEn: 'Color', value: 'Orange Fluorescent / Lime Green' },
+      { label: 'Ukuran Tersedia', labelEn: 'Available Sizes', value: 'S, M, L, XL, XXL, XXXL' },
+      { label: 'Standar', labelEn: 'Standard', value: 'SNI / ISO 20471 Class 2' },
+      { label: 'Jahitan', labelEn: 'Stitching', value: 'Double Stitching' }
+    ]
   },
   {
     id: '2',
