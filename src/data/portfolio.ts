@@ -200,8 +200,8 @@ export const portfolios: Portfolio[] = [
   {
     id: '4',
     slug: 'wearpack-fmm',
-    productName: 'Wearpack FMM Series',
-    productNameEn: 'FMM Workwear Series',
+    productName: 'Wearpack Industrial',
+    productNameEn: 'Industrial Wearpack',
     category: 'Wearpack',
     categoryEn: 'Workwear',
     clientName: 'FMM',
