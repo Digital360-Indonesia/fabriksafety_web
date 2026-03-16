@@ -1,6 +1,8 @@
 ---
 // Portfolio/Corporate Clients Section Component
-const clientLogos = Array.from({ length: 40 }, (_, i) => `/images/clients/${i + 1}.png`);
+// Verified clients only (18 clients)
+const verifiedClientIndices = [2, 12, 14, 15, 18, 19, 21, 26, 27, 38, 41, 42, 43, 44, 45, 46, 47, 48];
+const clientLogos = verifiedClientIndices.map(i => `/images/clients/${i}.png`);
 
 const testimonials = [
   {
@@ -85,19 +87,19 @@ const testimonials = [
       </p>
     </div>
 
-    <!-- Client Logos Slider (3 rows) -->
+    <!-- Client Logos Slider (2 rows) -->
     <div class="mb-16 space-y-4">
       <!-- Row 1 -->
       <div class="relative overflow-hidden">
         <div id="logo-slider-1" class="flex items-center" style="width: max-content;">
-          {clientLogos.slice(0, 14).map((logo, i) => (
+          {clientLogos.slice(0, 9).map((logo, i) => (
             <div class="logo-item" key={i}>
-              <img src={logo} alt={`Client ${i + 1}`} class="w-full h-full object-contain opacity-70 hover:opacity-100 transition-opacity grayscale hover:grayscale-0" />
+              <img src={logo} alt={`Verified Client ${i + 1}`} class="w-full h-full object-contain opacity-70 hover:opacity-100 transition-opacity grayscale hover:grayscale-0" />
             </div>
           ))}
-          {clientLogos.slice(0, 14).map((logo, i) => (
+          {clientLogos.slice(0, 9).map((logo, i) => (
             <div class="logo-item" key={`dup-${i}`}>
-              <img src={logo} alt={`Client ${i + 1}`} class="w-full h-full object-contain opacity-70 hover:opacity-100 transition-opacity grayscale hover:grayscale-0" />
+              <img src={logo} alt={`Verified Client ${i + 1}`} class="w-full h-full object-contain opacity-70 hover:opacity-100 transition-opacity grayscale hover:grayscale-0" />
             </div>
           ))}
         </div>
@@ -106,30 +108,14 @@ const testimonials = [
       <!-- Row 2 -->
       <div class="relative overflow-hidden">
         <div id="logo-slider-2" class="flex items-center" style="width: max-content;">
-          {clientLogos.slice(14, 27).map((logo, i) => (
+          {clientLogos.slice(9, 18).map((logo, i) => (
             <div class="logo-item" key={i}>
-              <img src={logo} alt={`Client ${i + 15}`} class="w-full h-full object-contain opacity-70 hover:opacity-100 transition-opacity grayscale hover:grayscale-0" />
+              <img src={logo} alt={`Verified Client ${i + 10}`} class="w-full h-full object-contain opacity-70 hover:opacity-100 transition-opacity grayscale hover:grayscale-0" />
             </div>
           ))}
-          {clientLogos.slice(14, 27).map((logo, i) => (
+          {clientLogos.slice(9, 18).map((logo, i) => (
             <div class="logo-item" key={`dup-${i}`}>
-              <img src={logo} alt={`Client ${i + 15}`} class="w-full h-full object-contain opacity-70 hover:opacity-100 transition-opacity grayscale hover:grayscale-0" />
-            </div>
-          ))}
-        </div>
-      </div>
-
-      <!-- Row 3 -->
-      <div class="relative overflow-hidden">
-        <div id="logo-slider-3" class="flex items-center" style="width: max-content;">
-          {clientLogos.slice(27, 40).map((logo, i) => (
-            <div class="logo-item" key={i}>
-              <img src={logo} alt={`Client ${i + 28}`} class="w-full h-full object-contain opacity-70 hover:opacity-100 transition-opacity grayscale hover:grayscale-0" />
-            </div>
-          ))}
-          {clientLogos.slice(27, 40).map((logo, i) => (
-            <div class="logo-item" key={`dup-${i}`}>
-              <img src={logo} alt={`Client ${i + 28}`} class="w-full h-full object-contain opacity-70 hover:opacity-100 transition-opacity grayscale hover:grayscale-0" />
+              <img src={logo} alt={`Verified Client ${i + 10}`} class="w-full h-full object-contain opacity-70 hover:opacity-100 transition-opacity grayscale hover:grayscale-0" />
             </div>
           ))}
         </div>
@@ -157,16 +143,15 @@ const testimonials = [
         100% { transform: translate3d(0, 0, 0); }
       }
 
-      #logo-slider-1,
-      #logo-slider-3 {
+      #logo-slider-1 {
         display: flex;
-        animation: slideLeft 35s linear infinite;
+        animation: slideLeft 25s linear infinite;
         will-change: transform;
       }
 
       #logo-slider-2 {
         display: flex;
-        animation: slideRight 35s linear infinite;
+        animation: slideRight 25s linear infinite;
         will-change: transform;
       }
 
@@ -182,8 +167,7 @@ const testimonials = [
       function initLogoSliders() {
         const sliders = [
           document.getElementById('logo-slider-1'),
-          document.getElementById('logo-slider-2'),
-          document.getElementById('logo-slider-3')
+          document.getElementById('logo-slider-2')
         ];
 
         sliders.forEach(slider => {

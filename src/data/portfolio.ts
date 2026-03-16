@@ -156,7 +156,7 @@ export const portfolios: Portfolio[] = [
     category: 'Jaket Safety',
     categoryEn: 'Safety Jacket',
     clientName: 'Freeport Indonesia',
-    clientLogo: '/images/clients/freeport.png',
+    clientLogo: '/images/clients/44.png',
     description: 'Jaket mining dengan scotlight reflective untuk visibility maksimal di area tambang. Dirancang khusus untuk kondisi ekstrem di area pertambangan.',
     descriptionEn: 'Mining jacket with scotlight reflective for maximum visibility in mining areas. Designed specifically for extreme conditions in mining areas.',
     images: [
@@ -215,7 +215,7 @@ export const portfolios: Portfolio[] = [
     category: 'Wearpack',
     categoryEn: 'Workwear',
     clientName: 'FMM',
-    clientLogo: '/images/clients/fmm.png',
+    clientLogo: '/images/clients/43.png',
     description: 'Wearpack profesional dengan desain modern untuk kebutuhan kerja FMM. Material berkualitas tinggi untuk kenyamanan dan ketahanan sepanjang hari.',
     descriptionEn: 'Professional workwear with modern design for FMM work needs. High-quality material for all-day comfort and durability.',
     images: [
@@ -388,7 +388,7 @@ export const portfolios: Portfolio[] = [
     category: 'Wearpack',
     categoryEn: 'Workwear',
     clientName: 'Kuehne + Nagel',
-    clientLogo: '/images/clients/kuehne-nagel.png',
+    clientLogo: '/images/clients/46.png',
     description: 'Wearpack logistic dengan bahan drill america yang kuat untuk aktivitas gudang dan logistik. Cocok untuk pekerjaan berat di area pergudangan.',
     descriptionEn: 'Logistic wearpack with strong american drill material for warehouse and logistics activities. Suitable for heavy work in warehouse areas.',
     images: [
@@ -445,7 +445,7 @@ export const portfolios: Portfolio[] = [
     category: 'Wearpack',
     categoryEn: 'Workwear',
     clientName: 'Sinergi Gula',
-    clientLogo: '/images/clients/sinergi-gula.png',
+    clientLogo: '/images/clients/48.png',
     description: 'Pakaian kerja industri dengan perlindungan maksimal untuk sektor manufaktur. Dirancang untuk kenyamanan dan ketahanan di lingkungan pabrik.',
     descriptionEn: 'Industrial workwear with maximum protection for the manufacturing sector. Designed for comfort and durability in factory environments.',
     images: [
