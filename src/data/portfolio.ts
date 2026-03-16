@@ -453,7 +453,6 @@ export const portfolios: Portfolio[] = [
       '/images/portfolio/wearpack-sinergi-gula-logo.webp',
       '/images/portfolio/wearpack-sinergi-gula-front.webp',
       '/images/portfolio/wearpack-sinergi-gula-collar.webp',
-      '/images/portfolio/wearpack-sinergi-gula-waistband.webp',
       '/images/portfolio/wearpack-sinergi-gula-fabric.webp',
     ],
     mainImage: '/images/portfolio/wearpack-sinergi-gula.webp',
