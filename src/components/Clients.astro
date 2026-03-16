@@ -1,10 +1,40 @@
 ---
-// Clients Section Component - Logo Slider
-const clients = Array.from({ length: 40 }, (_, i) => ({
-  id: i + 1,
-  logo: `/images/clients/${i + 1}.png`,
-  name: `Client ${i + 1}`
-}));
+// Clients Section Component - 2 Slides with 2 Rows Each
+// Only clients with completed projects (✅)
+
+// Slide 1 clients (first 10)
+const slide1Clients = [
+  { id: 1, logo: '/images/clients/2.png', name: 'PUPR' },
+  { id: 2, logo: '/images/clients/12.png', name: 'Pertamina' },
+  { id: 3, logo: '/images/clients/14.png', name: 'PT BSA' },
+  { id: 4, logo: '/images/clients/15.png', name: 'TCT' },
+  { id: 5, logo: '/images/clients/18.png', name: 'Jiipe' },
+  { id: 6, logo: '/images/clients/19.png', name: 'Supa' },
+  { id: 7, logo: '/images/clients/21.png', name: 'Gloster' },
+  { id: 8, logo: '/images/clients/25.png', name: 'Sampoerna' },
+  { id: 9, logo: '/images/clients/26.png', name: 'Lyondellbasel' },
+  { id: 10, logo: '/images/clients/32.png', name: 'Armetalindo' },
+];
+
+// Slide 2 clients (next 10)
+const slide2Clients = [
+  { id: 11, logo: '/images/clients/35.png', name: 'Tanto' },
+  { id: 12, logo: '/images/clients/asuka.png', name: 'ASUKA' },
+  { id: 13, logo: '/images/clients/bkp.png', name: 'BKP' },
+  { id: 14, logo: '/images/clients/fmm.png', name: 'FMM' },
+  { id: 15, logo: '/images/clients/freeport.png', name: 'Freeport' },
+  { id: 16, logo: '/images/clients/ksi.png', name: 'KSI' },
+  { id: 17, logo: '/images/clients/kuehne-nagel.png', name: 'Kuehne Nagel' },
+  { id: 18, logo: '/images/clients/mkp.png', name: 'MKP' },
+  { id: 19, logo: '/images/clients/sinergi-gula.png', name: 'Sinergi Gula' },
+  { id: 20, logo: '/images/clients/mkp.png', name: 'Kedawung Setia Industrial' },
+];
+
+// Split each slide into 2 rows (5 items per row)
+const slide1Row1 = slide1Clients.slice(0, 5);
+const slide1Row2 = slide1Clients.slice(5, 10);
+const slide2Row1 = slide2Clients.slice(0, 5);
+const slide2Row2 = slide2Clients.slice(5, 10);
 ---
 
 <section id="clients" class="py-16 md:py-24 bg-white overflow-hidden">
@@ -19,89 +49,133 @@ const clients = Array.from({ length: 40 }, (_, i) => ({
     </div>
   </div>
 
-  <!-- Logo Slider -->
-  <div class="relative">
-    <!-- Gradient Overlays -->
-    <div class="absolute left-0 top-0 bottom-0 w-24 bg-gradient-to-r from-white to-transparent z-10 pointer-events-none"></div>
-    <div class="absolute right-0 top-0 bottom-0 w-24 bg-gradient-to-l from-white to-transparent z-10 pointer-events-none"></div>
+  <!-- Logo Slider with 2 Slides -->
+  <div class="relative px-4">
+    <div class="swiper client-swiper">
+      <div class="swiper-wrapper">
+        <!-- Slide 1 -->
+        <div class="swiper-slide">
+          <div class="grid grid-cols-5 gap-4 md:gap-6 px-4 md:px-8">
+            {slide1Row1.map((client) => (
+              <div class="bg-gray-50 hover:bg-white rounded-xl p-4 md:p-6 flex items-center justify-center transition-all duration-300 hover:shadow-lg border border-gray-100 hover:border-primary-200 aspect-square">
+                <img
+                  src={client.logo}
+                  alt={client.name}
+                  class="w-full h-full object-contain"
+                  loading="lazy"
+                />
+              </div>
+            ))}
+          </div>
+          <div class="grid grid-cols-5 gap-4 md:gap-6 px-4 md:px-8 mt-4 md:mt-6">
+            {slide1Row2.map((client) => (
+              <div class="bg-gray-50 hover:bg-white rounded-xl p-4 md:p-6 flex items-center justify-center transition-all duration-300 hover:shadow-lg border border-gray-100 hover:border-primary-200 aspect-square">
+                <img
+                  src={client.logo}
+                  alt={client.name}
+                  class="w-full h-full object-contain"
+                  loading="lazy"
+                />
+              </div>
+            ))}
+          </div>
+        </div>
 
-    <!-- Slider Container -->
-    <div class="slider-container">
-      <div class="slider-track">
-        <!-- First set of logos -->
-        {clients.map((client) => (
-          <div class="slider-item">
-            <div class="bg-gray-50 hover:bg-white rounded-xl p-6 flex items-center justify-center transition-all duration-300 hover:shadow-lg border border-gray-100 hover:border-primary-200 h-full">
-              <img
-                src={client.logo}
-                alt={client.name}
-                class="w-24 h-24 object-contain"
-                loading="lazy"
-              />
-            </div>
+        <!-- Slide 2 -->
+        <div class="swiper-slide">
+          <div class="grid grid-cols-5 gap-4 md:gap-6 px-4 md:px-8">
+            {slide2Row1.map((client) => (
+              <div class="bg-gray-50 hover:bg-white rounded-xl p-4 md:p-6 flex items-center justify-center transition-all duration-300 hover:shadow-lg border border-gray-100 hover:border-primary-200 aspect-square">
+                <img
+                  src={client.logo}
+                  alt={client.name}
+                  class="w-full h-full object-contain"
+                  loading="lazy"
+                />
+              </div>
+            ))}
           </div>
-        ))}
-        <!-- Duplicate set for seamless loop -->
-        {clients.map((client) => (
-          <div class="slider-item">
-            <div class="bg-gray-50 hover:bg-white rounded-xl p-6 flex items-center justify-center transition-all duration-300 hover:shadow-lg border border-gray-100 hover:border-primary-200 h-full">
-              <img
-                src={client.logo}
-                alt={client.name}
-                class="w-24 h-24 object-contain"
-                loading="lazy"
-              />
-            </div>
+          <div class="grid grid-cols-5 gap-4 md:gap-6 px-4 md:px-8 mt-4 md:mt-6">
+            {slide2Row2.map((client) => (
+              <div class="bg-gray-50 hover:bg-white rounded-xl p-4 md:p-6 flex items-center justify-center transition-all duration-300 hover:shadow-lg border border-gray-100 hover:border-primary-200 aspect-square">
+                <img
+                  src={client.logo}
+                  alt={client.name}
+                  class="w-full h-full object-contain"
+                  loading="lazy"
+                />
+              </div>
+            ))}
           </div>
-        ))}
+        </div>
       </div>
+
+      <!-- Pagination -->
+      <div class="swiper-pagination mt-8"></div>
+
+      <!-- Navigation -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
     </div>
   </div>
 </section>
 
 <style>
-  .slider-container {
-    width: 100%;
-    overflow: hidden;
+  .client-swiper {
+    padding-bottom: 50px;
   }
 
-  .slider-track {
-    display: flex;
-    gap: 1.5rem;
-    animation: scroll 80s linear infinite;
-    width: max-content;
-    /* Smooth rendering */
-    will-change: transform;
-    transform: translateZ(0);
-    backface-visibility: hidden;
-    -webkit-backface-visibility: hidden;
+  .client-swiper .swiper-pagination-bullet {
+    @apply bg-gray-300 w-3 h-3;
   }
 
-  .slider-track:hover {
-    animation-play-state: paused;
+  .client-swiper .swiper-pagination-bullet-active {
+    @apply bg-primary-600 w-6 rounded-full;
   }
 
-  .slider-item {
-    flex-shrink: 0;
-    width: 150px;
+  .client-swiper .swiper-button-prev,
+  .client-swiper .swiper-button-next {
+    @apply text-primary-600;
+    transform: translateY(-25px);
   }
 
-  @keyframes scroll {
-    0% {
-      transform: translate3d(0, 0, 0);
-    }
-    100% {
-      transform: translate3d(-50%, 0, 0);
-    }
+  .client-swiper .swiper-button-prev::after,
+  .client-swiper .swiper-button-next::after {
+    font-size: 1.5rem;
   }
 
   @media (max-width: 768px) {
-    .slider-item {
-      width: 120px;
-    }
-
-    .slider-track {
-      gap: 1rem;
+    .client-swiper .swiper-button-prev,
+    .client-swiper .swiper-button-next {
+      display: none;
     }
   }
 </style>
+
+<!-- Swiper CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+<!-- Swiper JS and Init -->
+<script>
+  import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs';
+
+  document.addEventListener('DOMContentLoaded', () => {
+    new Swiper('.client-swiper', {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      loop: false,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+      },
+    });
+  });
+</script>
